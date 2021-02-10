@@ -44,15 +44,24 @@ class EmailAppController extends Controller
         $contact = Contact::where('id', $req->id)->first();
         $this->authorize('update', $contact);
         $contact->update($req->all());
-
         return Redirect::route('emailApp')->with('success', 'Congrat\'s ! Contact has been modified.');
     }
 
+    public function switchStatus(int $id, int $status)
+    {
+        $contactToActivate = Contact::where('id', $id)->first();
+        $contactToActivate->isActivate = $status;
+        // dd($contactToActivate);
+        $contactToActivate->save();
+        return Redirect::route('emailApp')->with('success', 'Congrat\'s ! Status has been updated.');
+    }
 
     // Delete
-    public function DeleteContact(int $id, Request $req)
+    public function deleteContact(int $id, Request $req)
     {
-        return $req->input('id');
+        $contactDel = Contact::where('id', $id)->first();
+        $contactDel->delete();
+        return Redirect::route('emailApp')->with('success', 'Congrat\'s ! Contact has been deleted.');
     }
 
     // Page Controller  

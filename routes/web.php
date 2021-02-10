@@ -39,6 +39,9 @@ Route::group(['auth:sanctum', 'verified'], function () {
     // Edit
     Route::get('/emailapp/edit/contact/{id}', 'App\Http\Controllers\EmailAppController@editContact')->name('emailApp.editContact');
     Route::patch('/emailapp/contact/{id}', 'App\Http\Controllers\EmailAppController@updateContact')->name('emailApp.updateContact');
+    // Edit Status
+    Route::post('/emailApp/switchStatus/{id}/{status}', 'App\Http\Controllers\EmailAppController@switchStatus')->name('emailApp.switchStatus');
+
     // Delete
-    Route::post('/emailApp/delete/{id}', 'App\Http\Controllers\EmailAppController@DeleteContact')->name('emailApp.deleteContact');
+    Route::post('/emailApp/delete/{id}', 'App\Http\Controllers\EmailAppController@deleteContact')->name('emailApp.deleteContact');
 });

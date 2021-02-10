@@ -87,6 +87,9 @@
                             "
                             :id="'statusBtn_' + contact.id"
                             v-on:change="StatusTriggerEvent"
+                            v-on:change.native="
+                              switchStatus(contact.id, contact.isActivate)
+                            "
                           />
                         </td>
 
@@ -107,12 +110,10 @@
                         <td
                           class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium"
                         >
-                          <!-- <a
-                            href="#"
-                            class="bg-red-400 hover:bg-red-600 text-white text-sm px-2 py-1 rounded"
-                            >Delete</a
-                          > -->
-                          <delete-button :id="contact.id" />
+                          <delete-button
+                            :id="contact.id"
+                            v-on:click.native="reloadContact(contact)"
+                          />
                         </td>
                       </tr>
                     </tbody>
@@ -154,6 +155,23 @@ export default {
     },
     hideNotification() {
       document.getElementById("successMessage").style.display = "none";
+    },
+    reloadContact(contact) {
+      //Get id of the current contact
+      const id = contact.id;
+      for (let i = 0; i < this.contactList.length; i++) {
+        if (this.contactList[i].id == id) {
+          // Get id of the current obj-contact from contactList
+          const idInContactList = this.contactList.indexOf(this.contactList[i]);
+          this.contactList.splice(idInContactList, 1);
+        }
+      }
+    },
+    switchStatus(id, statusContact) {
+      // console.log(statusContact);
+      let status = statusContact === 0 ? 1 : 0;
+      // console.log(status);
+      this.$inertia.post("/emailApp/switchStatus/" + id + "/" + status);
     },
   },
 };

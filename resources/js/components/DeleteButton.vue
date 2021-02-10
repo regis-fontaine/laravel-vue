@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="deleteContact(id)"
+    @click="submit"
     class="bg-red-400 hover:bg-red-600 text-white text-sm px-2 py-1 rounded"
   >
     Delete 🗑️
@@ -14,13 +14,8 @@ export default {
   props: ["id"],
 
   methods: {
-    deleteContact(id) {
-      axios
-        .post("/emailApp/delete/{id}", {
-          id: this.id,
-        })
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
+    submit() {
+      this.$inertia.post("/emailApp/delete/" + this.id, this.id);
     },
   },
 };
