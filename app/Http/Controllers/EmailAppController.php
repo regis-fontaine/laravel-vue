@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
 use Inertia\Inertia;
+use App\Models\Contact;
+use App\Jobs\SendMailJob;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Carbon;
+use App\Mail\Contact as MailContact;
+use Illuminate\Support\Facades\Mail;
 use  Illuminate\Validation\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class EmailAppController extends Controller
 {

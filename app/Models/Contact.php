@@ -5,11 +5,12 @@ namespace App\Models;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
 
 class Contact extends Model
 {
     use HasFactory;
-
+    use Notifiable;
     protected $fillable = ['receiver', 'email', 'interval', 'user_id', 'isActivate'];
 
     // A la creation de ce model je veux lui injecter l'id de l'user connecté.
