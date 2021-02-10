@@ -28,5 +28,13 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        // Listen to User Register Event 
+        // When an user create a profil 
+        // Create Contact with user datas
+        // Contact::create([
+        //     'receiver' => $input['name'],
+        //     'email' => $input['email'],
+        //     'interval' => '1m'
+        // ]);
     }
 }
