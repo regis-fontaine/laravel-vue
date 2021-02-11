@@ -34,7 +34,7 @@ class SendFiveMinutesEmail
             $date = Carbon::now('Europe/Paris')->format('d-m-Y H:i:s');
             $email = new Mail();
             $email->setFrom("sebastienhb@gmail.com", "EmailSender Admin");
-            $email->setSubject("Je t'aime " . $contact['receiver']);
+            $email->setSubject("Hello " . $contact['receiver']);
             $email->addTo($contact['email'], $contact['receiver']);
             $email->addContent("text/plain", "Hello $date");
             $email->addContent(
