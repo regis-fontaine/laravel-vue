@@ -152,8 +152,8 @@
                 </ul>
                 <div class="text-red-600 text-sm font-bold mt-2">
                   Pour accéder à l'application via la page d'accueil,
-                  connectez-vous puis vous rendre sur 'Dashboard' puis
-                  'EmailApp'.
+                  connectez-vous puis vous rendre sur 'Dashboard' puis 'Email
+                  Sender'.
                 </div>
               </div>
             </div>
@@ -248,15 +248,19 @@
                   </li>
                   <li>Ajout du multilangue</li>
                   <li>
-                    Utilisation le cache pour recharger le front après
+                    Utilisation du cache pour recharger le front après
                     modification
                   </li>
                   <li>
                     Créer model/controller/Vue pour Message, afin de pouvoir
-                    envoyer des mails plus personnalisés
+                    envoyer des mails personnalisés
                   </li>
                   <li>Intégrer Message::class dans les tâches</li>
                   <li>Dark Mode</li>
+                  <li>
+                    Finir toggle bouton pour changer le status (WIP, just need
+                    to reload data onclick)
+                  </li>
                   <li>Ouvert aux suggestions... .</li>
                 </ul>
               </div>
