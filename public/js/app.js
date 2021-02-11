@@ -34970,148 +34970,154 @@ var render = function() {
                                 "tbody",
                                 { staticClass: "bg-white" },
                                 _vm._l(this.contactList, function(contact) {
-                                  return _c("tr", { key: contact.id }, [
-                                    _c(
-                                      "td",
-                                      {
-                                        staticClass:
-                                          "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "text-sm leading-5 text-gray-500"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                          " +
-                                                _vm._s(contact.receiver) +
-                                                "\n                        "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "td",
-                                      {
-                                        staticClass:
-                                          "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "text-sm leading-5 text-gray-500"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                          " +
-                                                _vm._s(contact.email) +
-                                                "\n                        "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "td",
-                                      {
-                                        staticClass:
-                                          "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                                      },
-                                      [
-                                        _c("toggle-button", {
-                                          attrs: {
-                                            defaultState:
-                                              contact.isActivate && 1
-                                                ? true
-                                                : false,
-                                            id: "statusBtn_" + contact.id,
-                                            disabled: ""
-                                          },
-                                          on: {
-                                            change: _vm.StatusTriggerEvent
-                                          },
-                                          nativeOn: {
-                                            change: function($event) {
-                                              return _vm.switchStatus(
-                                                contact.id,
-                                                contact.isActivate
+                                  return _c(
+                                    "tr",
+                                    { key: contact.id + contact.receiver },
+                                    [
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "text-sm leading-5 text-gray-500"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                          " +
+                                                  _vm._s(contact.receiver) +
+                                                  "\n                        "
                                               )
-                                            }
-                                          }
-                                        })
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "td",
-                                      {
-                                        staticClass:
-                                          "px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center text-sm leading-5 text-gray-500"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                        " +
-                                            _vm._s(contact.interval) +
-                                            "\n                      "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "td",
-                                      {
-                                        staticClass:
-                                          "px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium"
-                                      },
-                                      [
-                                        _c(
-                                          "a",
-                                          {
-                                            staticClass:
-                                              "bg-indigo-600 hover:bg-indigo-900 text-white text-sm px-2 py-1 rounded",
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "text-sm leading-5 text-gray-500"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                          " +
+                                                  _vm._s(contact.email) +
+                                                  "\n                        "
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
+                                        },
+                                        [
+                                          _c("toggle-button", {
                                             attrs: {
-                                              href:
-                                                "emailapp/edit/contact/" +
-                                                contact.id
+                                              defaultState:
+                                                contact.isActivate && 1
+                                                  ? true
+                                                  : false,
+                                              id: "statusBtn_" + contact.id,
+                                              disabled: ""
+                                            },
+                                            on: {
+                                              change: _vm.StatusTriggerEvent
+                                            },
+                                            nativeOn: {
+                                              change: function($event) {
+                                                return _vm.switchStatus(
+                                                  contact.id,
+                                                  contact.isActivate
+                                                )
+                                              }
                                             }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "Edit ⚙️\n                        "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "td",
-                                      {
-                                        staticClass:
-                                          "px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium"
-                                      },
-                                      [
-                                        _c("delete-button", {
-                                          attrs: { id: contact.id },
-                                          nativeOn: {
-                                            click: function($event) {
-                                              return _vm.reloadContact(contact)
+                                          })
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center text-sm leading-5 text-gray-500"
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                        " +
+                                              _vm._s(contact.interval) +
+                                              "\n                      "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium"
+                                        },
+                                        [
+                                          _c(
+                                            "a",
+                                            {
+                                              staticClass:
+                                                "bg-indigo-600 hover:bg-indigo-900 text-white text-sm px-2 py-1 rounded",
+                                              attrs: {
+                                                href:
+                                                  "emailapp/edit/contact/" +
+                                                  contact.id
+                                              }
+                                            },
+                                            [
+                                              _vm._v(
+                                                "Edit ⚙️\n                        "
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium"
+                                        },
+                                        [
+                                          _c("delete-button", {
+                                            attrs: { id: contact.id },
+                                            nativeOn: {
+                                              click: function($event) {
+                                                return _vm.reloadContact(
+                                                  contact
+                                                )
+                                              }
                                             }
-                                          }
-                                        })
-                                      ],
-                                      1
-                                    )
-                                  ])
+                                          })
+                                        ],
+                                        1
+                                      )
+                                    ]
+                                  )
                                 }),
                                 0
                               )

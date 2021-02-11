@@ -61,7 +61,7 @@
                     <tbody class="bg-white">
                       <tr
                         v-for="contact in this.contactList"
-                        v-bind:key="contact.id"
+                        v-bind:key="contact.id + contact.receiver"
                       >
                         <td
                           class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"

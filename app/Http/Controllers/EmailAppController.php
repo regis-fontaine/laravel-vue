@@ -8,6 +8,7 @@ use App\Jobs\SendMailJob;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use App\Mail\Contact as MailContact;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use  Illuminate\Validation\Validator;
 use Illuminate\Support\Facades\Redirect;
@@ -33,7 +34,10 @@ class EmailAppController extends Controller
     // Read
     public function index()
     {
-        $contacts = Contact::all();
+        $id = Auth::user()->id;
+        // $contacts = Contact::all();
+        // $contacts = Contact::join("users", "users.id", "=", "user_id")->get();
+        $contacts = Contact::where("user_id", $id)->get();
 
         return Inertia::render('EmailApp', [
             'contacts' => $contacts
