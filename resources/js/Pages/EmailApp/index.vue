@@ -90,6 +90,7 @@
                             v-on:change.native="
                               switchStatus(contact.id, contact.isActivate)
                             "
+                            disabled
                           />
                         </td>
 

@@ -9,6 +9,12 @@ module.exports = {
     ],
 
     theme: {
+        listStyletype:{
+            none: 'none',
+            disc: 'disc',
+            decimal: 'decimal',
+            square: 'square',
+        },
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],

@@ -39,10 +39,10 @@ class SendMinuteEmail
             $email->setFrom("sebastienhb@gmail.com", "EmailSender Admin");
             $email->setSubject("Hello " . $contact['receiver']);
             $email->addTo($contact['email'], $contact['receiver']);
-            $email->addContent("text/plain", "Hello $date");
+            $email->addContent("text/plain", "Hello World $date");
             $email->addContent(
                 "text/html",
-                "<strong>Hello $date </strong>"
+                "<strong>Hello World $date </strong>"
             );
             $sendgrid = new SendGrid(getenv('SENDGRID_API_KEY'));
             $response = $sendgrid->send($email);

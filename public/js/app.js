@@ -2835,18 +2835,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Jetstream_ApplicationLogo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Jetstream/ApplicationLogo */ "./resources/js/Jetstream/ApplicationLogo.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
+/* harmony import */ var _components_Logo_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/Logo.vue */ "./resources/js/components/Logo.vue");
 //
 //
 //
@@ -2931,9 +2921,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    JetApplicationLogo: _Jetstream_ApplicationLogo__WEBPACK_IMPORTED_MODULE_0__.default
+    JetApplicationLogo: _Jetstream_ApplicationLogo__WEBPACK_IMPORTED_MODULE_0__.default,
+    JetNavLink: _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_1__.default,
+    Logo: _components_Logo_vue__WEBPACK_IMPORTED_MODULE_2__.default
   }
 });
 
@@ -2956,6 +2950,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Jetstream/DropdownLink */ "./resources/js/Jetstream/DropdownLink.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 /* harmony import */ var _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Jetstream/ResponsiveNavLink */ "./resources/js/Jetstream/ResponsiveNavLink.vue");
+/* harmony import */ var _components_Logo_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Logo.vue */ "./resources/js/components/Logo.vue");
 //
 //
 //
@@ -3194,6 +3189,148 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -3207,7 +3344,8 @@ __webpack_require__.r(__webpack_exports__);
     JetDropdown: _Jetstream_Dropdown__WEBPACK_IMPORTED_MODULE_2__.default,
     JetDropdownLink: _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__.default,
     JetNavLink: _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__.default,
-    JetResponsiveNavLink: _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__.default
+    JetResponsiveNavLink: _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__.default,
+    Logo: _components_Logo_vue__WEBPACK_IMPORTED_MODULE_6__.default
   },
   data: function data() {
     return {
@@ -3216,14 +3354,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     switchToTeam: function switchToTeam(team) {
-      this.$inertia.put(route('current-team.update'), {
-        'team_id': team.id
+      this.$inertia.put(route("current-team.update"), {
+        team_id: team.id
       }, {
         preserveState: false
       });
     },
     logout: function logout() {
-      this.$inertia.post(route('logout'));
+      this.$inertia.post(route("logout"));
     }
   }
 });
@@ -4682,6 +4820,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -5642,6 +5781,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _components_Logo_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Logo.vue */ "./resources/js/components/Logo.vue");
 //
 //
 //
@@ -5818,12 +5958,186 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     canLogin: Boolean,
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String
+  },
+  components: {
+    Logo: _components_Logo_vue__WEBPACK_IMPORTED_MODULE_0__.default
   }
 });
 
@@ -5887,6 +6201,91 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Logo.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Logo.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
 
@@ -6092,7 +6491,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.bg-gray-100[data-v-317d1a6e] {\n    background-color: #f7fafc;\n    background-color: rgba(247, 250, 252, var(--tw-bg-opacity));\n}\n.border-gray-200[data-v-317d1a6e] {\n    border-color: #edf2f7;\n    border-color: rgba(237, 242, 247, var(--tw-border-opacity));\n}\n.text-gray-400[data-v-317d1a6e] {\n    color: #cbd5e0;\n    color: rgba(203, 213, 224, var(--tw-text-opacity));\n}\n.text-gray-500[data-v-317d1a6e] {\n    color: #a0aec0;\n    color: rgba(160, 174, 192, var(--tw-text-opacity));\n}\n.text-gray-600[data-v-317d1a6e] {\n    color: #718096;\n    color: rgba(113, 128, 150, var(--tw-text-opacity));\n}\n.text-gray-700[data-v-317d1a6e] {\n    color: #4a5568;\n    color: rgba(74, 85, 104, var(--tw-text-opacity));\n}\n.text-gray-900[data-v-317d1a6e] {\n    color: #1a202c;\n    color: rgba(26, 32, 44, var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n.dark\\:bg-gray-800[data-v-317d1a6e] {\n        background-color: #2d3748;\n        background-color: rgba(45, 55, 72, var(--tw-bg-opacity));\n}\n.dark\\:bg-gray-900[data-v-317d1a6e] {\n        background-color: #1a202c;\n        background-color: rgba(26, 32, 44, var(--tw-bg-opacity));\n}\n.dark\\:border-gray-700[data-v-317d1a6e] {\n        border-color: #4a5568;\n        border-color: rgba(74, 85, 104, var(--tw-border-opacity));\n}\n.dark\\:text-white[data-v-317d1a6e] {\n        color: #fff;\n        color: rgba(255, 255, 255, var(--tw-text-opacity));\n}\n.dark\\:text-gray-400[data-v-317d1a6e] {\n        color: #cbd5e0;\n        color: rgba(203, 213, 224, var(--tw-text-opacity));\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.bg-gray-100[data-v-317d1a6e] {\n  background-color: #f7fafc;\n  background-color: rgba(247, 250, 252, var(--tw-bg-opacity));\n}\n.border-gray-200[data-v-317d1a6e] {\n  border-color: #edf2f7;\n  border-color: rgba(237, 242, 247, var(--tw-border-opacity));\n}\n.text-gray-400[data-v-317d1a6e] {\n  color: #cbd5e0;\n  color: rgba(203, 213, 224, var(--tw-text-opacity));\n}\n.text-gray-500[data-v-317d1a6e] {\n  color: #a0aec0;\n  color: rgba(160, 174, 192, var(--tw-text-opacity));\n}\n.text-gray-600[data-v-317d1a6e] {\n  color: #718096;\n  color: rgba(113, 128, 150, var(--tw-text-opacity));\n}\n.text-gray-700[data-v-317d1a6e] {\n  color: #4a5568;\n  color: rgba(74, 85, 104, var(--tw-text-opacity));\n}\n.text-gray-900[data-v-317d1a6e] {\n  color: #1a202c;\n  color: rgba(26, 32, 44, var(--tw-text-opacity));\n}\n\n/* @media (prefers-color-scheme: dark) {\n  .dark\\:bg-gray-800 {\n    background-color: #2d3748;\n    background-color: rgba(45, 55, 72, var(--tw-bg-opacity));\n  }\n\n  .dark\\:bg-gray-900 {\n    background-color: #1a202c;\n    background-color: rgba(26, 32, 44, var(--tw-bg-opacity));\n  }\n\n  .dark\\:border-gray-700 {\n    border-color: #4a5568;\n    border-color: rgba(74, 85, 104, var(--tw-border-opacity));\n  }\n\n  .dark\\:text-white {\n    color: #fff;\n    color: rgba(255, 255, 255, var(--tw-text-opacity));\n  }\n\n  .dark\\:text-gray-400 {\n    color: #cbd5e0;\n    color: rgba(203, 213, 224, var(--tw-text-opacity));\n  }\n} */\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27605,6 +28004,45 @@ component.options.__file = "resources/js/components/DeleteButton.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Logo.vue":
+/*!******************************************!*\
+  !*** ./resources/js/components/Logo.vue ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Logo_vue_vue_type_template_id_1c796f16___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Logo.vue?vue&type=template&id=1c796f16& */ "./resources/js/components/Logo.vue?vue&type=template&id=1c796f16&");
+/* harmony import */ var _Logo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logo.vue?vue&type=script&lang=js& */ "./resources/js/components/Logo.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Logo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Logo_vue_vue_type_template_id_1c796f16___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Logo_vue_vue_type_template_id_1c796f16___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Logo.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ToggleButton.vue":
 /*!**************************************************!*\
   !*** ./resources/js/components/ToggleButton.vue ***!
@@ -28379,6 +28817,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DeleteButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DeleteButton.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/DeleteButton.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DeleteButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Logo.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Logo.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Logo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Logo.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -29317,6 +29771,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DeleteButton_vue_vue_type_template_id_25843a28___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DeleteButton_vue_vue_type_template_id_25843a28___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DeleteButton.vue?vue&type=template&id=25843a28& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/DeleteButton.vue?vue&type=template&id=25843a28&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Logo.vue?vue&type=template&id=1c796f16&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Logo.vue?vue&type=template&id=1c796f16& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_template_id_1c796f16___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_template_id_1c796f16___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_template_id_1c796f16___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Logo.vue?vue&type=template&id=1c796f16& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Logo.vue?vue&type=template&id=1c796f16&");
 
 
 /***/ }),
@@ -30990,21 +31461,15 @@ var render = function() {
       "div",
       { staticClass: "p-6 sm:px-20 bg-white border-b border-gray-200" },
       [
-        _c(
-          "div",
-          [_c("jet-application-logo", { staticClass: "block h-12 w-auto" })],
-          1
-        ),
+        _c("div", [_c("logo", { staticClass: "block h-12 w-auto" })], 1),
         _vm._v(" "),
         _c("div", { staticClass: "mt-8 text-2xl" }, [
-          _vm._v(
-            "\n            Welcome to your Jetstream application!\n        "
-          )
+          _vm._v("Welcome to your Email Sender application!")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "mt-6 text-gray-500" }, [
           _vm._v(
-            "\n            Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed\n            to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe\n            you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel\n            ecosystem to be a breath of fresh air. We hope you love it.\n        "
+            "\n      L'application permet l'envoi automatique de mails, (avec le même\n      contenu) à intervalle régulier, à plusieurs destinataires.\n    "
           )
         ])
       ]
@@ -31045,194 +31510,28 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "ml-12" }, [
-            _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
-              _vm._v(
-                "\n                    Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "https://laravel.com/docs" } }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "mt-3 flex items-center text-sm font-semibold text-indigo-700"
-                },
-                [
-                  _c("div", [_vm._v("Explore the documentation")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ml-1 text-indigo-500" }, [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "w-4 h-4",
-                        attrs: { viewBox: "0 0 20 20", fill: "currentColor" }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
-                            "clip-rule": "evenodd"
-                          }
-                        })
-                      ]
-                    )
-                  ])
-                ]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "p-6 border-t border-gray-200 md:border-t-0 md:border-l"
-          },
-          [
-            _c("div", { staticClass: "flex items-center" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-8 h-8 text-gray-400",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    "stroke-linecap": "round",
-                    "stroke-linejoin": "round",
-                    "stroke-width": "2",
-                    viewBox: "0 0 24 24"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-                    }
-                  }),
-                  _c("path", {
-                    attrs: { d: "M15 13a3 3 0 11-6 0 3 3 0 016 0z" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _vm._m(1)
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "ml-12" }, [
-              _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
-                _vm._v(
-                  "\n                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "https://laracasts.com" } }, [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "mt-3 flex items-center text-sm font-semibold text-indigo-700"
-                  },
-                  [
-                    _c("div", [_vm._v("Start watching Laracasts")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "ml-1 text-indigo-500" }, [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "w-4 h-4",
-                          attrs: { viewBox: "0 0 20 20", fill: "currentColor" }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
-                              "clip-rule": "evenodd"
-                            }
-                          })
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "p-6 border-t border-gray-200" }, [
-          _c("div", { staticClass: "flex items-center" }, [
-            _c(
-              "svg",
-              {
-                staticClass: "w-8 h-8 text-gray-400",
-                attrs: {
-                  fill: "none",
-                  stroke: "currentColor",
-                  "stroke-linecap": "round",
-                  "stroke-linejoin": "round",
-                  "stroke-width": "2",
-                  viewBox: "0 0 24 24"
-                }
-              },
-              [
-                _c("path", {
-                  attrs: {
-                    d:
-                      "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(2)
-          ]),
-          _vm._v(" "),
-          _vm._m(3)
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "p-6 border-t border-gray-200 md:border-l" }, [
-          _c("div", { staticClass: "flex items-center" }, [
-            _c(
-              "svg",
-              {
-                staticClass: "w-8 h-8 text-gray-400",
-                attrs: {
-                  fill: "none",
-                  stroke: "currentColor",
-                  "stroke-linecap": "round",
-                  "stroke-linejoin": "round",
-                  "stroke-width": "2",
-                  viewBox: "0 0 24 24"
-                }
-              },
-              [
-                _c("path", {
-                  attrs: {
-                    d:
-                      "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass:
-                  "ml-4 text-lg text-gray-600 leading-7 font-semibold"
-              },
-              [_vm._v("Authentication")]
+              { staticClass: "mt-2 text-sm text-gray-500" },
+              [
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "jet-nav-link",
+                  {
+                    staticClass:
+                      "mt-3 flex items-center text-sm font-semibold text-indigo-700",
+                    attrs: {
+                      href: _vm.route("emailApp"),
+                      active: _vm.route().current("emailApp")
+                    }
+                  },
+                  [_vm._v("\n            Email Sender\n          ")]
+                )
+              ],
+              1
             )
-          ]),
-          _vm._v(" "),
-          _vm._m(4)
+          ])
         ])
       ]
     )
@@ -31259,51 +31558,55 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "ml-4 text-lg text-gray-600 leading-7 font-semibold" },
+      { staticClass: "mt-2 text-gray-600 dark:text-gray-400 text-sm" },
       [
-        _c("a", { attrs: { href: "https://laracasts.com" } }, [
-          _vm._v("Laracasts")
+        _c("ul", { staticClass: "list-decimal list-inside mb-2" }, [
+          _c("li", [
+            _vm._v("Se rendre sur l'application via le lien 'Email Sender'")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Créer un contact via le bouton 'Create Contact'")]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "\n                Insérer les informations du contact :\n                "
+            ),
+            _c("ul", { staticClass: "list-inside list-square ml-10" }, [
+              _c("li", [_vm._v("Receiver = Nom et Prénom")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Email")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Interval entre 1, 5 ou 10 minutes")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Enregister")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "\n                Activer l'envoi du mail pour le contact :\n                "
+            ),
+            _c("ul", { staticClass: "list-inside list-square ml-10" }, [
+              _c("li", [
+                _vm._v(
+                  "\n                    Se rendre sur le profil du contact via le bouton 'Edit'\n                  "
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Sélectionner 'Status' et le passer à 'ON'")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Enregister")])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-red-600 text-sm font-bold mt-2" }, [
+          _vm._v(
+            "\n              Pour accéder à l'application via le dashboard, rendez-vous sur\n              le lien 'Email Sender' ci-dessous ou dans la barre de\n              navigation.\n            "
+          )
         ])
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "ml-4 text-lg text-gray-600 leading-7 font-semibold" },
-      [
-        _c("a", { attrs: { href: "https://tailwindcss.com/" } }, [
-          _vm._v("Tailwind")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-12" }, [
-      _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
-        _vm._v(
-          "\n                    Laravel Jetstream is built with Tailwind, an amazing utility first CSS framework that doesn't get in your way. You'll be amazed how easily you can build and maintain fresh, modern designs with this wonderful framework at your fingertips.\n                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-12" }, [
-      _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
-        _vm._v(
-          "\n                    Authentication and registration views are included with Laravel Jetstream, as well as support for user email verification and resetting forgotten passwords. So, you're free to get started what matters most: building your application.\n                "
-        )
-      ])
-    ])
   }
 ]
 render._withStripped = true
@@ -31352,9 +31655,7 @@ var render = function() {
                           "inertia-link",
                           { attrs: { href: _vm.route("dashboard") } },
                           [
-                            _c("jet-application-mark", {
-                              staticClass: "block h-9 w-auto"
-                            })
+                            _c("logo", { staticClass: "block h-5 w-auto pt-2" })
                           ],
                           1
                         )
@@ -31379,7 +31680,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                Dashboard\n                            "
+                              "\n                Dashboard\n              "
                             )
                           ]
                         ),
@@ -31394,7 +31695,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                Email Sender\n                            "
+                              "\n                Email Sender\n              "
                             )
                           ]
                         )
@@ -31436,12 +31737,12 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
-                                                    "\n                                            " +
+                                                    "\n                      " +
                                                       _vm._s(
                                                         _vm.$page.props.user
                                                           .current_team.name
                                                       ) +
-                                                      "\n\n                                            "
+                                                      "\n\n                      "
                                                   ),
                                                   _c(
                                                     "svg",
@@ -31494,7 +31795,7 @@ var render = function() {
                                                       },
                                                       [
                                                         _vm._v(
-                                                          "\n                                                Manage Team\n                                            "
+                                                          "\n                        Manage Team\n                      "
                                                         )
                                                       ]
                                                     ),
@@ -31512,7 +31813,7 @@ var render = function() {
                                                       },
                                                       [
                                                         _vm._v(
-                                                          "\n                                                Team Settings\n                                            "
+                                                          "\n                        Team Settings\n                      "
                                                         )
                                                       ]
                                                     ),
@@ -31530,7 +31831,7 @@ var render = function() {
                                                           },
                                                           [
                                                             _vm._v(
-                                                              "\n                                                Create New Team\n                                            "
+                                                              "\n                        Create New Team\n                      "
                                                             )
                                                           ]
                                                         )
@@ -31549,7 +31850,7 @@ var render = function() {
                                                       },
                                                       [
                                                         _vm._v(
-                                                          "\n                                                Switch Teams\n                                            "
+                                                          "\n                        Switch Teams\n                      "
                                                         )
                                                       ]
                                                     ),
@@ -31663,7 +31964,7 @@ var render = function() {
                                   ],
                                   null,
                                   false,
-                                  373511154
+                                  1964942802
                                 )
                               })
                             : _vm._e()
@@ -31719,11 +32020,11 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                            " +
+                                                  "\n                      " +
                                                     _vm._s(
                                                       _vm.$page.props.user.name
                                                     ) +
-                                                    "\n\n                                            "
+                                                    "\n\n                      "
                                                 ),
                                                 _c(
                                                   "svg",
@@ -31768,7 +32069,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Manage Account\n                                    "
+                                          "\n                    Manage Account\n                  "
                                         )
                                       ]
                                     ),
@@ -31782,7 +32083,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Profile\n                                    "
+                                          "\n                    Profile\n                  "
                                         )
                                       ]
                                     ),
@@ -31799,7 +32100,7 @@ var render = function() {
                                           },
                                           [
                                             _vm._v(
-                                              "\n                                        API Tokens\n                                    "
+                                              "\n                    API Tokens\n                  "
                                             )
                                           ]
                                         )
@@ -31825,7 +32126,7 @@ var render = function() {
                                           { attrs: { as: "button" } },
                                           [
                                             _vm._v(
-                                              "\n                                            Logout\n                                        "
+                                              "\n                      Logout\n                    "
                                             )
                                           ]
                                         )
@@ -31928,11 +32229,7 @@ var render = function() {
                           active: _vm.route().current("dashboard")
                         }
                       },
-                      [
-                        _vm._v(
-                          "\n                        Dashboard\n                    "
-                        )
-                      ]
+                      [_vm._v("\n            Dashboard\n          ")]
                     )
                   ],
                   1
@@ -31962,13 +32259,25 @@ var render = function() {
                           {
                             staticClass: "font-medium text-base text-gray-800"
                           },
-                          [_vm._v(_vm._s(_vm.$page.props.user.name))]
+                          [
+                            _vm._v(
+                              "\n                " +
+                                _vm._s(_vm.$page.props.user.name) +
+                                "\n              "
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
                           "div",
                           { staticClass: "font-medium text-sm text-gray-500" },
-                          [_vm._v(_vm._s(_vm.$page.props.user.email))]
+                          [
+                            _vm._v(
+                              "\n                " +
+                                _vm._s(_vm.$page.props.user.email) +
+                                "\n              "
+                            )
+                          ]
                         )
                       ])
                     ]),
@@ -31985,11 +32294,7 @@ var render = function() {
                               active: _vm.route().current("profile.show")
                             }
                           },
-                          [
-                            _vm._v(
-                              "\n                            Profile\n                        "
-                            )
-                          ]
+                          [_vm._v("\n              Profile\n            ")]
                         ),
                         _vm._v(" "),
                         _vm.$page.props.jetstream.hasApiFeatures
@@ -32005,7 +32310,7 @@ var render = function() {
                               },
                               [
                                 _vm._v(
-                                  "\n                            API Tokens\n                        "
+                                  "\n              API Tokens\n            "
                                 )
                               ]
                             )
@@ -32028,7 +32333,7 @@ var render = function() {
                               { attrs: { as: "button" } },
                               [
                                 _vm._v(
-                                  "\n                                Logout\n                            "
+                                  "\n                Logout\n              "
                                 )
                               ]
                             )
@@ -32050,7 +32355,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                Manage Team\n                            "
+                                    "\n                Manage Team\n              "
                                   )
                                 ]
                               ),
@@ -32068,7 +32373,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                Team Settings\n                            "
+                                    "\n                Team Settings\n              "
                                   )
                                 ]
                               ),
@@ -32083,7 +32388,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                Create New Team\n                            "
+                                    "\n                Create New Team\n              "
                                   )
                                 ]
                               ),
@@ -32100,7 +32405,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                Switch Teams\n                            "
+                                    "\n                Switch Teams\n              "
                                   )
                                 ]
                               ),
@@ -34727,7 +35032,8 @@ var render = function() {
                                               contact.isActivate && 1
                                                 ? true
                                                 : false,
-                                            id: "statusBtn_" + contact.id
+                                            id: "statusBtn_" + contact.id,
+                                            disabled: ""
                                           },
                                           on: {
                                             change: _vm.StatusTriggerEvent
@@ -36228,7 +36534,7 @@ var render = function() {
                       staticClass: "text-sm text-gray-700 underline",
                       attrs: { href: "/dashboard" }
                     },
-                    [_vm._v("\n            Dashboard\n        ")]
+                    [_vm._v("\n      Dashboard\n    ")]
                   )
                 : [
                     _c(
@@ -36237,7 +36543,7 @@ var render = function() {
                         staticClass: "text-sm text-gray-700 underline",
                         attrs: { href: _vm.route("login") }
                       },
-                      [_vm._v("\n                Login\n            ")]
+                      [_vm._v("\n        Login\n      ")]
                     ),
                     _vm._v(" "),
                     _vm.canRegister
@@ -36247,7 +36553,7 @@ var render = function() {
                             staticClass: "ml-4 text-sm text-gray-700 underline",
                             attrs: { href: _vm.route("register") }
                           },
-                          [_vm._v("\n                Register\n            ")]
+                          [_vm._v("\n        Register\n      ")]
                         )
                       : _vm._e()
                   ]
@@ -36260,33 +36566,8 @@ var render = function() {
         _c(
           "div",
           { staticClass: "flex justify-center pt-8 sm:justify-start sm:pt-0" },
-          [
-            _c(
-              "svg",
-              {
-                staticClass: "h-16 w-auto text-gray-700 sm:h-20",
-                attrs: {
-                  viewBox: "0 0 651 192",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c(
-                  "g",
-                  { attrs: { "clip-path": "url(#clip0)", fill: "#EF3B2D" } },
-                  [
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"
-                      }
-                    })
-                  ]
-                )
-              ]
-            )
-          ]
+          [_c("logo")],
+          1
         ),
         _vm._v(" "),
         _c(
@@ -36353,11 +36634,8 @@ var render = function() {
                         _c("path", {
                           attrs: {
                             d:
-                              "M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                              "M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
                           }
-                        }),
-                        _c("path", {
-                          attrs: { d: "M15 13a3 3 0 11-6 0 3 3 0 016 0z" }
                         })
                       ]
                     ),
@@ -36394,8 +36672,12 @@ var render = function() {
                         _c("path", {
                           attrs: {
                             d:
-                              "M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                              "M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
                           }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: { d: "M15 13a3 3 0 11-6 0 3 3 0 016 0z" }
                         })
                       ]
                     ),
@@ -36444,7 +36726,7 @@ var render = function() {
                         staticClass:
                           "ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white"
                       },
-                      [_vm._v("Vibrant Ecosystem")]
+                      [_vm._v("\n              Todo\n            ")]
                     )
                   ]),
                   _vm._v(" "),
@@ -36462,87 +36744,7 @@ var render = function() {
               "flex justify-center mt-4 sm:items-center sm:justify-between"
           },
           [
-            _c(
-              "div",
-              { staticClass: "text-center text-sm text-gray-500 sm:text-left" },
-              [
-                _c("div", { staticClass: "flex items-center" }, [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "-mt-px w-5 h-5 text-gray-400",
-                      attrs: {
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        viewBox: "0 0 24 24",
-                        stroke: "currentColor"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ml-1 underline",
-                      attrs: { href: "https://laravel.bigcartel.com" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Shop\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "ml-4 -mt-px w-5 h-5 text-gray-400",
-                      attrs: {
-                        fill: "none",
-                        stroke: "currentColor",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                        "stroke-width": "2",
-                        viewBox: "0 0 24 24"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ml-1 underline",
-                      attrs: {
-                        href: "https://github.com/sponsors/taylorotwell"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Sponsor\n                    "
-                      )
-                    ]
-                  )
-                ])
-              ]
-            ),
+            _vm._m(7),
             _vm._v(" "),
             _c(
               "div",
@@ -36552,11 +36754,11 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n                Laravel v" +
+                  "\n        Laravel v" +
                     _vm._s(_vm.laravelVersion) +
                     " (PHP v" +
                     _vm._s(_vm.phpVersion) +
-                    ")\n            "
+                    ")\n      "
                 )
               ]
             )
@@ -36572,14 +36774,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "ml-4 text-lg leading-7 font-semibold" }, [
-      _c(
-        "a",
-        {
-          staticClass: "underline text-gray-900 dark:text-white",
-          attrs: { href: "https://laravel.com/docs" }
-        },
-        [_vm._v("Documentation")]
-      )
+      _c("p", { staticClass: "underline text-gray-900 dark:text-white" }, [
+        _vm._v("\n                Description\n              ")
+      ])
     ])
   },
   function() {
@@ -36591,40 +36788,56 @@ var staticRenderFns = [
         "div",
         { staticClass: "mt-2 text-gray-600 dark:text-gray-400 text-sm" },
         [
-          _vm._v(
-            "\n                            Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.\n                        "
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-4 text-lg leading-7 font-semibold" }, [
-      _c(
-        "a",
-        {
-          staticClass: "underline text-gray-900 dark:text-white",
-          attrs: { href: "https://laracasts.com" }
-        },
-        [_vm._v("Laracasts")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-12" }, [
-      _c(
-        "div",
-        { staticClass: "mt-2 text-gray-600 dark:text-gray-400 text-sm" },
-        [
-          _vm._v(
-            "\n                            Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.\n                        "
-          )
+          _c("p", { staticClass: "mb-2" }, [
+            _vm._v(
+              "\n                L'application permet l'envoi automatique de mails, (avec le\n                même contenu) à intervalle régulier, à plusieurs\n                destinataires.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "list-disc list-inside mb-2" }, [
+            _c("li", [
+              _vm._v(
+                "\n                  Une interface permettant la gestion de l'envoi du mail pour\n                  chaque destinataire,\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Les intervalles possibles sont les suivants :\n                  "
+              ),
+              _c("ul", { staticClass: "list-disc list-square ml-10" }, [
+                _c("li", [_vm._v("Un envoi toutes les minutes")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Un envoi toutes les 5 minutes")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Un envoi toutes les 10 minutes")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Possibilité de mettre en pause / reprendre l'envoi\n                  automatique du mail,\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Possibilité de changer l'adresse mail du destinataire,\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v("Possibilité de créer un nouvel envoi automatique,")
+            ]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Possibilité de supprimer un envoi automatique.")])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "mb-2" }, [
+            _vm._v(
+              "\n                Le contenu du mail sera \" Hello World 'date et heure du jour'\n                \".\n              "
+            )
+          ])
         ]
       )
     ])
@@ -36640,7 +36853,7 @@ var staticRenderFns = [
           staticClass: "underline text-gray-900 dark:text-white",
           attrs: { href: "https://laravel-news.com/" }
         },
-        [_vm._v("Laravel News")]
+        [_vm._v("Documentation")]
       )
     ])
   },
@@ -36653,9 +36866,124 @@ var staticRenderFns = [
         "div",
         { staticClass: "mt-2 text-gray-600 dark:text-gray-400 text-sm" },
         [
-          _vm._v(
-            "\n                            Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.\n                        "
-          )
+          _c("ul", { staticClass: "list-decimal list-inside mb-2" }, [
+            _c("li", [_vm._v("S'enregister via le lien 'Register'")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Se connecter avec le profil crée")]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v("Créer un contact via le bouton 'Create Contact'")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Insérer les informations du contact :\n                  "
+              ),
+              _c("ul", { staticClass: "list-inside list-square ml-10" }, [
+                _c("li", [_vm._v("Receiver = Nom et Prénom")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Email")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Interval entre 1, 5 ou 10 minutes")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Enregister")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Activer l'envoi du mail pour le contact :\n                  "
+              ),
+              _c("ul", { staticClass: "list-inside list-square ml-10" }, [
+                _c("li", [
+                  _vm._v(
+                    "\n                      Se rendre sur le profil du contact via le bouton 'Edit'\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Sélectionner 'Status' et le passer à 'ON'")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Enregister")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "text-red-600 text-sm font-bold mt-2" }, [
+            _vm._v(
+              "\n                Pour accéder à l'application via la page d'accueil,\n                connectez-vous puis vous rendre sur 'Dashboard' puis\n                'EmailApp'.\n              "
+            )
+          ])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ml-4 text-lg leading-7 font-semibold" }, [
+      _c(
+        "a",
+        {
+          staticClass: "underline text-gray-900 dark:text-white",
+          attrs: { href: "https://regis-fontaine.netlify.app/" }
+        },
+        [_vm._v("Développeur")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ml-12" }, [
+      _c(
+        "div",
+        { staticClass: "mt-2 text-gray-600 dark:text-gray-400 text-sm" },
+        [
+          _c("h1", { staticClass: "text-lg" }, [_vm._v("Régis Fontaine")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "my-2 text-sm" }, [
+            _c(
+              "a",
+              {
+                staticClass: "underline text-gray-900 dark:text-white",
+                attrs: {
+                  href: "https://github.com/regis-fontaine/laravel-vue",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("Repositorie du projet 🌍")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "my-2 text-sm" }, [
+            _c(
+              "a",
+              {
+                staticClass: "underline text-gray-900 dark:text-white",
+                attrs: {
+                  href: "https://github.com/regis-fontaine/",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("Github 🌟")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "my-2 text-sm" }, [
+            _c(
+              "a",
+              {
+                staticClass: "underline text-gray-900 dark:text-white",
+                attrs: {
+                  href: "https://regis-fontaine.netlify.app/",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("Portfolio 💻")]
+            )
+          ])
         ]
       )
     ])
@@ -36670,100 +36998,48 @@ var staticRenderFns = [
         { staticClass: "mt-2 text-gray-600 dark:text-gray-400 text-sm" },
         [
           _vm._v(
-            "\n                            Laravel's robust library of first-party tools and libraries, such as "
+            "\n              Voici une liste non-exhaustive afin d'améliorer l'application:\n              "
           ),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://forge.laravel.com" }
-            },
-            [_vm._v("Forge")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://vapor.laravel.com" }
-            },
-            [_vm._v("Vapor")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://nova.laravel.com" }
-            },
-            [_vm._v("Nova")]
-          ),
-          _vm._v(", and "),
-          _c(
-            "a",
-            { staticClass: "underline", attrs: { href: "https://envoyer.io" } },
-            [_vm._v("Envoyer")]
-          ),
-          _vm._v(
-            " help you take your projects to the next level. Pair them with powerful open source libraries like "
-          ),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://laravel.com/docs/billing" }
-            },
-            [_vm._v("Cashier")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://laravel.com/docs/dusk" }
-            },
-            [_vm._v("Dusk")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://laravel.com/docs/broadcasting" }
-            },
-            [_vm._v("Echo")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://laravel.com/docs/horizon" }
-            },
-            [_vm._v("Horizon")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://laravel.com/docs/sanctum" }
-            },
-            [_vm._v("Sanctum")]
-          ),
-          _vm._v(", "),
-          _c(
-            "a",
-            {
-              staticClass: "underline",
-              attrs: { href: "https://laravel.com/docs/telescope" }
-            },
-            [_vm._v("Telescope")]
-          ),
-          _vm._v(", and more.\n                        ")
+          _c("ul", { staticClass: "list-disc ml-10" }, [
+            _c("li", [
+              _vm._v(
+                "\n                  Certains éléments de Vue peuvent être découper en composant\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Ajout du multilangue")]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Utilisation le cache pour recharger le front après\n                  modification\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "\n                  Créer model/controller/Vue pour Message, afin de pouvoir\n                  envoyer des mails plus personnalisés\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Intégrer Message::class dans les tâches")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Dark Mode")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Ouvert aux suggestions... .")])
+          ])
         ]
       )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-center text-sm text-gray-500 sm:text-left" },
+      [_c("div", { staticClass: "flex items-center" })]
+    )
   }
 ]
 render._withStripped = true
@@ -36841,6 +37117,147 @@ var render = function() {
       on: { click: _vm.submit }
     },
     [_vm._v("\n  Delete 🗑️\n")]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Logo.vue?vue&type=template&id=1c796f16&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Logo.vue?vue&type=template&id=1c796f16& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      staticClass: "h-20 w-auto text-gray-700 sm:h-20",
+      attrs: {
+        viewBox: "0 0 621 230",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+      }
+    },
+    [
+      _c("path", {
+        attrs: {
+          d:
+            "M106.234 75.1016C103.609 77.0234 101.125 79.2266 98.7812 81.7109C96.4375 84.1953 94.2578 86.7734 92.2422 89.4453C90.2734 92.0703 88.4922 94.7422 86.8984 97.4609C85.3047 100.18 83.9453 102.781 82.8203 105.266C81.6953 107.703 80.8281 109.953 80.2188 112.016C79.6094 114.031 79.3047 115.695 79.3047 117.008C79.3047 118.789 79.4688 120.195 79.7969 121.227C80.1719 122.211 80.5938 122.961 81.0625 123.477C81.5312 123.992 82 124.32 82.4688 124.461C82.9844 124.602 83.3594 124.672 83.5938 124.672C84.7656 124.672 85.9844 124.039 87.25 122.773C88.5156 121.461 89.7344 119.844 90.9062 117.922C92.125 116 93.25 113.938 94.2812 111.734C95.3125 109.531 96.1797 107.516 96.8828 105.688H97.0234C98.1484 106.719 99.25 107.82 100.328 108.992C101.453 110.164 102.461 111.289 103.352 112.367C104.383 113.586 105.344 114.805 106.234 116.023C105.484 117.523 104.547 119.047 103.422 120.594C102.297 122.141 101.055 123.641 99.6953 125.094C98.3828 126.5 96.9766 127.812 95.4766 129.031C94.0234 130.203 92.5703 131.141 91.1172 131.844C90.3203 132.219 89.7109 132.453 89.2891 132.547C88.9141 132.688 88.375 132.758 87.6719 132.758C87.25 132.758 86.7812 132.641 86.2656 132.406C85.7969 132.219 85.3047 131.984 84.7891 131.703C83.5234 131 82 129.992 80.2188 128.68C78.4375 127.367 76.7266 125.797 75.0859 123.969C73.4922 122.141 72.1328 120.055 71.0078 117.711C69.8359 115.367 69.25 112.789 69.25 109.977C69.25 107.352 69.9531 104.398 71.3594 101.117C72.7656 97.7891 74.5703 94.3906 76.7734 90.9219C78.9766 87.4531 81.3906 84.0547 84.0156 80.7266C86.6875 77.3516 89.2891 74.2812 91.8203 71.5156C90.1797 69.875 88.7734 68.1875 87.6016 66.4531C86.4766 64.6719 85.9141 62.9141 85.9141 61.1797C85.9141 59.1172 86.2891 57.1953 87.0391 55.4141C87.7891 53.5859 88.7734 51.875 89.9922 50.2812C91.2578 48.6875 92.6875 47.1875 94.2812 45.7812C95.9219 44.3281 97.6094 42.9219 99.3438 41.5625C100.469 40.6719 101.758 39.7344 103.211 38.75C104.664 37.7187 106.141 36.7812 107.641 35.9375C109.141 35.0938 110.617 34.4141 112.07 33.8984C113.57 33.3359 114.93 33.0547 116.148 33.0547C116.945 33.0547 117.672 33.2422 118.328 33.6172C118.984 33.9453 119.547 34.5547 120.016 35.4453C120.531 36.2891 120.93 37.4844 121.211 39.0312C121.492 40.5312 121.633 42.4766 121.633 44.8672C121.633 45.9453 121.445 47 121.07 48.0312C120.742 49.0156 120.297 50 119.734 50.9844C119.172 51.9219 118.539 52.8359 117.836 53.7266C117.133 54.5703 116.406 55.3672 115.656 56.1172C113.875 57.8984 111.883 59.5391 109.68 61.0391L108.977 59.8438C109.258 59.5156 109.562 59 109.891 58.2969C110.219 57.5469 110.5 56.7031 110.734 55.7656C111.016 54.7812 111.25 53.7266 111.438 52.6016C111.625 51.4297 111.719 50.2578 111.719 49.0859C111.719 46.7422 111.297 45.0312 110.453 43.9531C109.609 42.8281 108.531 42.2656 107.219 42.2656C106.281 42.2656 105.227 42.7109 104.055 43.6016C102.883 44.4453 101.781 45.6172 100.75 47.1172C99.7656 48.5703 98.9219 50.3047 98.2188 52.3203C97.5156 54.3359 97.1641 56.4688 97.1641 58.7188C97.1641 59.6094 97.2812 60.7578 97.5156 62.1641C97.75 63.5234 98.1953 64.9297 98.8516 66.3828C99.5547 67.7891 100.492 69.1484 101.664 70.4609C102.883 71.7734 104.453 72.8047 106.375 73.5547L106.234 75.1016ZM127.75 130.297C128.453 128.656 129.32 126.43 130.352 123.617C131.43 120.805 132.531 117.758 133.656 114.477C134.781 111.195 135.906 107.844 137.031 104.422C138.156 101 139.141 97.8594 139.984 95C140.875 92.1406 141.602 89.75 142.164 87.8281C142.727 85.8594 143.008 84.6875 143.008 84.3125C143.008 83.6562 142.82 83.3281 142.445 83.3281C141.977 83.3281 141.227 83.8438 140.195 84.875C139.211 85.8594 138.109 87.1016 136.891 88.6016C135.672 90.0547 134.43 91.6016 133.164 93.2422C131.898 94.8828 130.773 96.3359 129.789 97.6016C128.805 100.461 127.773 103.414 126.695 106.461C125.617 109.508 124.562 112.508 123.531 115.461C122.547 118.414 121.633 121.227 120.789 123.898C119.945 126.57 119.242 128.938 118.68 131C118.164 131.094 117.602 131.164 116.992 131.211C115.914 131.352 114.508 131.422 112.773 131.422C111.977 131.422 111.133 131.375 110.242 131.281C109.352 131.234 108.484 131.141 107.641 131L107.148 130.297C107.383 129.828 107.805 128.867 108.414 127.414C108.977 125.961 109.656 124.203 110.453 122.141C111.203 120.078 112.047 117.781 112.984 115.25C113.875 112.719 114.766 110.141 115.656 107.516C116.547 104.891 117.414 102.312 118.258 99.7812C119.102 97.25 119.828 94.9297 120.438 92.8203C121.094 90.7109 121.609 88.9297 121.984 87.4766C122.406 85.9766 122.617 84.9688 122.617 84.4531C122.617 83.9375 122.547 83.5391 122.406 83.2578C122.312 82.9766 122.219 82.7188 122.125 82.4844C121.984 82.2969 121.844 82.1094 121.703 81.9219V80.8672C122.781 80.2109 124.047 79.625 125.5 79.1094C126.953 78.5938 128.359 78.1719 129.719 77.8438C131.266 77.4688 132.883 77.1406 134.57 76.8594L134.852 77.2812C134.852 77.8438 134.734 78.7344 134.5 79.9531C134.266 81.1719 133.984 82.4844 133.656 83.8906C133.375 85.2969 133.047 86.7031 132.672 88.1094C132.344 89.4688 132.062 90.5703 131.828 91.4141C133.188 89.5859 134.57 87.7812 135.977 86C137.383 84.1719 138.742 82.5547 140.055 81.1484C141.367 79.6953 142.562 78.5234 143.641 77.6328C144.766 76.7422 145.727 76.2969 146.523 76.2969C146.852 76.2969 147.391 76.4375 148.141 76.7188C148.938 77 149.734 77.4219 150.531 77.9844C151.328 78.5469 152.031 79.2734 152.641 80.1641C153.297 81.0547 153.648 82.1094 153.695 83.3281C153.695 83.75 153.461 84.7109 152.992 86.2109C152.523 87.7109 151.984 89.3984 151.375 91.2734C152.828 89.4453 154.281 87.6406 155.734 85.8594C157.234 84.0781 158.641 82.4844 159.953 81.0781C161.312 79.6719 162.555 78.5234 163.68 77.6328C164.852 76.7422 165.836 76.2969 166.633 76.2969C166.961 76.2969 167.547 76.4609 168.391 76.7891C169.234 77.0703 170.102 77.5391 170.992 78.1953C171.883 78.8047 172.656 79.6016 173.312 80.5859C174.016 81.5234 174.391 82.6719 174.438 84.0312C174.438 84.5 174.109 85.5781 173.453 87.2656C172.797 88.9531 171.977 90.9688 170.992 93.3125C170.055 95.6562 169.023 98.2109 167.898 100.977C166.773 103.742 165.719 106.461 164.734 109.133C163.797 111.805 163 114.289 162.344 116.586C161.688 118.883 161.359 120.758 161.359 122.211C161.359 122.773 161.406 123.195 161.5 123.477C161.641 123.711 161.922 123.828 162.344 123.828C162.859 123.781 163.633 123.523 164.664 123.055C165.695 122.539 166.891 121.789 168.25 120.805C169.609 119.82 171.062 118.625 172.609 117.219C174.203 115.766 175.773 114.078 177.32 112.156L178.867 113.562C176.898 116.047 174.695 118.414 172.258 120.664C169.82 122.867 167.406 124.812 165.016 126.5C162.625 128.188 160.375 129.523 158.266 130.508C156.156 131.492 154.445 131.984 153.133 131.984C152.898 131.984 152.594 131.891 152.219 131.703C151.844 131.516 151.469 131.211 151.094 130.789C150.719 130.367 150.391 129.781 150.109 129.031C149.828 128.281 149.688 127.344 149.688 126.219C149.688 125.656 149.758 124.953 149.898 124.109C150.039 123.219 150.203 122.328 150.391 121.438C150.578 120.5 150.766 119.656 150.953 118.906C151.141 118.109 151.281 117.523 151.375 117.148C151.797 115.508 152.383 113.68 153.133 111.664C153.93 109.602 154.773 107.469 155.664 105.266C156.555 103.062 157.469 100.883 158.406 98.7266C159.344 96.5234 160.188 94.4844 160.938 92.6094C161.688 90.6875 162.297 89.0234 162.766 87.6172C163.234 86.1641 163.469 85.0625 163.469 84.3125C163.469 83.6562 163.281 83.3281 162.906 83.3281C162.484 83.3281 161.758 83.7969 160.727 84.7344C159.695 85.6719 158.547 86.8203 157.281 88.1797C156.062 89.5391 154.773 91.0156 153.414 92.6094C152.102 94.1562 150.906 95.5859 149.828 96.8984C148.516 101.117 147.344 104.867 146.312 108.148C145.281 111.43 144.344 114.406 143.5 117.078C142.656 119.75 141.883 122.211 141.18 124.461C140.477 126.664 139.844 128.844 139.281 131C138.766 131.094 138.203 131.164 137.594 131.211C136.516 131.352 135.109 131.422 133.375 131.422C132.578 131.422 131.734 131.375 130.844 131.281C129.953 131.234 129.086 131.141 128.242 131L127.75 130.297ZM219.719 112.438C217.656 114.922 215.43 117.336 213.039 119.68C210.695 121.977 208.375 124.016 206.078 125.797C203.828 127.578 201.719 129.008 199.75 130.086C197.781 131.164 196.141 131.703 194.828 131.703C194.547 131.703 194.195 131.562 193.773 131.281C193.352 131.047 193.07 130.812 192.93 130.578C192.414 129.641 192.039 128.469 191.805 127.062C191.617 125.609 191.523 124.273 191.523 123.055C191.523 122.68 191.57 122.164 191.664 121.508C191.805 120.805 191.945 120.078 192.086 119.328C190.539 120.969 188.922 122.562 187.234 124.109C185.594 125.609 184 126.945 182.453 128.117C180.953 129.289 179.617 130.227 178.445 130.93C177.227 131.633 176.336 131.984 175.773 131.984C175.398 131.984 175.094 131.844 174.859 131.562C174.578 131.281 174.344 130.906 174.156 130.438C173.922 129.969 173.758 129.477 173.664 128.961C173.523 128.445 173.43 127.93 173.383 127.414C173.242 125.773 173.312 123.992 173.594 122.07C173.828 120.102 174.18 118.109 174.648 116.094C175.117 114.078 175.656 112.109 176.266 110.188C176.828 108.219 177.391 106.438 177.953 104.844C178.516 103.203 179.008 101.82 179.43 100.695C179.852 99.5703 180.133 98.8203 180.273 98.4453C180.461 97.8828 180.766 97.2266 181.188 96.4766C181.656 95.6797 182.172 94.9062 182.734 94.1562C183.297 93.3594 183.859 92.6094 184.422 91.9062C185.031 91.1562 185.617 90.5 186.18 89.9375C187.211 88.9531 188.547 87.8984 190.188 86.7734C191.828 85.6484 193.609 84.5469 195.531 83.4688C197.5 82.3906 199.516 81.3359 201.578 80.3047C203.641 79.2734 205.586 78.3828 207.414 77.6328C209.289 76.8828 210.953 76.2734 212.406 75.8047C213.859 75.3359 214.961 75.1016 215.711 75.1016C216.367 75.1016 216.93 75.125 217.398 75.1719C217.914 75.2188 218.312 75.2891 218.594 75.3828L218.734 75.7344C218.219 76.3906 217.586 77.5156 216.836 79.1094C216.086 80.7031 215.266 82.5547 214.375 84.6641C213.484 86.7734 212.57 89.0938 211.633 91.625C210.695 94.1562 209.758 96.7109 208.82 99.2891C207.93 101.867 207.086 104.398 206.289 106.883C205.492 109.32 204.766 111.547 204.109 113.562C203.5 115.578 203.008 117.289 202.633 118.695C202.305 120.055 202.141 120.945 202.141 121.367C202.141 122.211 202.492 122.633 203.195 122.633C203.664 122.586 204.414 122.328 205.445 121.859C206.477 121.344 207.672 120.594 209.031 119.609C210.391 118.625 211.844 117.43 213.391 116.023C214.984 114.57 216.578 112.883 218.172 110.961L219.719 112.438ZM185.195 121.789C185.57 121.789 186.062 121.578 186.672 121.156C187.281 120.734 187.938 120.195 188.641 119.539C189.344 118.883 190.094 118.133 190.891 117.289C191.688 116.398 192.461 115.508 193.211 114.617C193.68 112.977 194.195 111.172 194.758 109.203C195.367 107.234 196 105.219 196.656 103.156C197.312 101.094 197.992 99.0312 198.695 96.9688C199.398 94.9062 200.078 92.9609 200.734 91.1328C201.438 89.2578 202.094 87.5703 202.703 86.0703C203.312 84.5234 203.852 83.2344 204.32 82.2031C203.57 82.4375 202.586 82.7891 201.367 83.2578C200.148 83.6797 198.789 84.4766 197.289 85.6484C196.023 86.6328 194.828 88.1094 193.703 90.0781C192.578 92.0469 191.547 94.2734 190.609 96.7578C189.672 99.1953 188.805 101.727 188.008 104.352C187.258 106.977 186.602 109.414 186.039 111.664C185.523 113.914 185.125 115.836 184.844 117.43C184.562 119.023 184.422 119.984 184.422 120.312C184.422 120.688 184.445 121.039 184.492 121.367C184.586 121.648 184.82 121.789 185.195 121.789ZM244.82 52.1094C245.805 52.1094 246.695 52.5312 247.492 53.375C248.289 54.1719 248.688 55.3203 248.688 56.8203C248.688 58.2734 248.359 59.6797 247.703 61.0391C247.094 62.3516 246.32 63.5234 245.383 64.5547C244.445 65.5859 243.391 66.4062 242.219 67.0156C241.094 67.625 240.039 67.9297 239.055 67.9297C238.633 67.9297 238.164 67.8828 237.648 67.7891C237.18 67.6484 236.734 67.4141 236.312 67.0859C235.891 66.7109 235.539 66.2188 235.258 65.6094C234.977 65 234.836 64.2266 234.836 63.2891C234.836 61.9297 235.117 60.5938 235.68 59.2812C236.289 57.9219 237.062 56.7266 238 55.6953C238.984 54.6172 240.062 53.75 241.234 53.0938C242.406 52.4375 243.602 52.1094 244.82 52.1094ZM241.375 77.2812C240.859 77.9844 240.227 79.1094 239.477 80.6562C238.773 82.2031 238 84.0547 237.156 86.2109C236.312 88.3203 235.445 90.6172 234.555 93.1016C233.664 95.5859 232.773 98.1172 231.883 100.695C231.039 103.227 230.242 105.711 229.492 108.148C228.742 110.539 228.062 112.742 227.453 114.758C226.891 116.727 226.445 118.414 226.117 119.82C225.789 121.18 225.625 122.07 225.625 122.492C225.625 123.383 225.977 123.828 226.68 123.828C227.242 123.781 228.039 123.523 229.07 123.055C230.102 122.586 231.273 121.883 232.586 120.945C233.945 120.008 235.422 118.812 237.016 117.359C238.609 115.906 240.25 114.172 241.938 112.156L243.484 113.562C241.422 116.188 239.172 118.625 236.734 120.875C234.344 123.078 231.953 125.023 229.562 126.711C227.219 128.352 224.992 129.641 222.883 130.578C220.773 131.516 219.016 131.984 217.609 131.984C217.234 131.984 216.883 131.844 216.555 131.562C216.227 131.328 215.945 131.094 215.711 130.859C214.914 129.922 214.492 129.102 214.445 128.398C214.352 127.695 214.305 126.969 214.305 126.219C214.305 125.141 214.609 123.336 215.219 120.805C215.781 118.273 216.508 115.414 217.398 112.227C218.289 108.992 219.297 105.617 220.422 102.102C221.5 98.5859 222.555 95.3281 223.586 92.3281C224.664 89.3281 225.625 86.7734 226.469 84.6641C227.359 82.5547 228.039 81.2891 228.508 80.8672C229.445 80.0234 230.617 79.3438 232.023 78.8281C233.43 78.2656 234.812 77.8438 236.172 77.5625C237.719 77.2344 239.359 77 241.094 76.8594L241.375 77.2812ZM271.047 54.8516C269.875 58.3203 268.492 62.2812 266.898 66.7344C265.305 71.1406 263.664 75.6875 261.977 80.375C260.336 85.0156 258.695 89.6328 257.055 94.2266C255.414 98.8203 253.961 103.016 252.695 106.812C251.43 110.562 250.398 113.773 249.602 116.445C248.805 119.117 248.406 120.852 248.406 121.648C248.406 122.492 248.758 122.914 249.461 122.914C249.93 122.867 250.68 122.609 251.711 122.141C252.742 121.625 253.938 120.875 255.297 119.891C256.656 118.906 258.109 117.711 259.656 116.305C261.25 114.852 262.844 113.164 264.438 111.242L265.984 112.719C263.922 115.203 261.695 117.617 259.305 119.961C256.961 122.258 254.641 124.297 252.344 126.078C250.094 127.859 247.984 129.289 246.016 130.367C244.047 131.445 242.406 131.984 241.094 131.984C240.438 131.984 239.898 131.68 239.477 131.07C239.055 130.508 238.727 129.805 238.492 128.961C238.211 128.07 238.023 127.133 237.93 126.148C237.836 125.117 237.789 124.18 237.789 123.336C237.789 123.148 237.812 122.867 237.859 122.492C237.859 122.07 237.883 121.625 237.93 121.156C237.977 120.641 238.047 120.148 238.141 119.68C238.188 119.164 238.258 118.719 238.352 118.344C239.242 115.203 240.297 111.781 241.516 108.078C242.688 104.375 243.953 100.555 245.312 96.6172C246.672 92.6797 248.078 88.6953 249.531 84.6641C250.984 80.6328 252.391 76.7422 253.75 72.9922C255.156 69.1953 256.469 65.6328 257.688 62.3047C258.906 58.9297 259.984 55.9531 260.922 53.375C261.859 50.75 262.586 48.6172 263.102 46.9766C263.664 45.2891 263.945 44.2578 263.945 43.8828C263.945 42.8516 263.664 42.1484 263.102 41.7734C262.586 41.3516 261.93 41.1641 261.133 41.2109C260.336 41.2578 259.469 41.4453 258.531 41.7734C257.594 42.0547 256.727 42.3828 255.93 42.7578L255.016 40.8594C259.844 38.5156 263.711 36.875 266.617 35.9375C269.57 35 271.609 34.5312 272.734 34.5312C273.062 34.5312 273.438 34.6719 273.859 34.9531C274.328 35.1875 274.75 35.5391 275.125 36.0078C275.5 36.4766 275.828 37.0156 276.109 37.625C276.391 38.1875 276.531 38.7734 276.531 39.3828C276.531 39.7578 275.992 41.3281 274.914 44.0938C273.836 46.8125 272.547 50.3984 271.047 54.8516Z",
+          fill: "black"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M306.812 59.8438C307.094 59.5156 307.398 59 307.727 58.2969C308.055 57.5469 308.359 56.7031 308.641 55.7656C308.922 54.7812 309.133 53.7266 309.273 52.6016C309.461 51.4297 309.555 50.2578 309.555 49.0859C309.555 46.7422 309.086 45.0312 308.148 43.9531C307.258 42.8281 306.25 42.2656 305.125 42.2656C304.516 42.2656 303.883 42.4531 303.227 42.8281C302.57 43.2031 301.984 43.7891 301.469 44.5859C300.953 45.3359 300.508 46.2969 300.133 47.4688C299.805 48.6406 299.641 50.0469 299.641 51.6875C299.641 52.5312 299.828 54.0312 300.203 56.1875C300.625 58.3438 301.141 60.875 301.75 63.7812C302.359 66.6875 302.992 69.8516 303.648 73.2734C304.352 76.6484 305.008 80.0234 305.617 83.3984C306.227 86.7734 306.719 90.0078 307.094 93.1016C307.516 96.1484 307.727 98.7969 307.727 101.047C307.727 103.297 307.328 105.664 306.531 108.148C305.781 110.586 304.797 113 303.578 115.391C302.359 117.734 301.023 119.961 299.57 122.07C298.117 124.18 296.711 126.055 295.352 127.695C293.992 129.289 292.773 130.555 291.695 131.492C290.617 132.43 289.844 132.898 289.375 132.898C288.578 132.898 287.828 132.852 287.125 132.758C286.469 132.664 285.742 132.453 284.945 132.125C283.445 131.281 281.898 130.203 280.305 128.891C278.758 127.578 277.281 126.148 275.875 124.602C274.422 123.055 273.109 121.484 271.938 119.891C270.719 118.25 269.734 116.68 268.984 115.18C270.062 113.68 271.188 112.227 272.359 110.82C273.344 109.602 274.445 108.336 275.664 107.023C276.836 105.711 278.008 104.539 279.18 103.508H279.32C280.023 105.336 280.914 107.352 281.992 109.555C283.07 111.758 284.219 113.82 285.438 115.742C286.703 117.664 287.992 119.281 289.305 120.594C290.617 121.859 291.859 122.492 293.031 122.492C293.266 122.492 293.617 122.422 294.086 122.281C294.602 122.141 295.094 121.836 295.562 121.367C296.031 120.852 296.43 120.102 296.758 119.117C297.133 118.086 297.32 116.68 297.32 114.898C297.32 113.68 297.086 111.641 296.617 108.781C296.195 105.922 295.633 102.664 294.93 99.0078C294.227 95.3516 293.477 91.5078 292.68 87.4766C291.93 83.4453 291.203 79.6484 290.5 76.0859C289.797 72.5234 289.211 69.4062 288.742 66.7344C288.32 64.0156 288.109 62.1641 288.109 61.1797C288.109 59.1172 288.531 57.125 289.375 55.2031C290.266 53.2344 291.297 51.4297 292.469 49.7891C293.688 48.1016 294.93 46.625 296.195 45.3594C297.461 44.0938 298.469 43.1094 299.219 42.4062C300.344 41.4688 301.586 40.4609 302.945 39.3828C304.352 38.3047 305.734 37.2969 307.094 36.3594C308.5 35.4219 309.812 34.6484 311.031 34.0391C312.25 33.3828 313.258 33.0547 314.055 33.0547C314.852 33.0547 315.578 33.2422 316.234 33.6172C316.891 33.9453 317.453 34.5547 317.922 35.4453C318.438 36.2891 318.812 37.4844 319.047 39.0312C319.328 40.5312 319.469 42.4766 319.469 44.8672C319.469 45.9453 319.281 47 318.906 48.0312C318.578 49.0156 318.133 50 317.57 50.9844C317.008 51.9219 316.375 52.8359 315.672 53.7266C314.969 54.5703 314.242 55.3672 313.492 56.1172C311.711 57.8984 309.719 59.5391 307.516 61.0391L306.812 59.8438ZM318.695 131.984C317.664 131.984 316.633 131.656 315.602 131C314.57 130.297 313.633 129.43 312.789 128.398C311.945 127.32 311.266 126.148 310.75 124.883C310.188 123.617 309.906 122.398 309.906 121.227C309.906 119.82 310.094 118.227 310.469 116.445C310.797 114.664 311.242 112.812 311.805 110.891C312.32 108.969 312.906 107.07 313.562 105.195C314.219 103.32 314.852 101.609 315.461 100.062C316.023 98.4688 316.539 97.1094 317.008 95.9844C317.43 94.8594 317.734 94.1094 317.922 93.7344C318.859 91.4844 320.312 89.3047 322.281 87.1953C324.297 85.0859 326.477 83.2109 328.82 81.5703C331.211 79.9297 333.602 78.6172 335.992 77.6328C338.43 76.6484 340.562 76.1562 342.391 76.1562C343.891 76.1562 345.109 76.9766 346.047 78.6172C346.984 80.2578 347.453 82.3203 347.453 84.8047C347.453 86.0703 347.148 87.3125 346.539 88.5312C345.977 89.75 345.227 90.8984 344.289 91.9766C343.398 93.0547 342.414 94.0625 341.336 95C340.305 95.9375 339.32 96.7578 338.383 97.4609L323.688 108.711C322.844 111.898 322.141 114.734 321.578 117.219C321.062 119.656 320.805 121.32 320.805 122.211C320.805 123.57 320.992 124.602 321.367 125.305C321.742 126.008 322.516 126.359 323.688 126.359C326.172 126.359 328.75 125.141 331.422 122.703C334.094 120.219 336.695 116.258 339.227 110.82L341.266 112.156C340 115.109 338.523 117.805 336.836 120.242C335.195 122.68 333.414 124.766 331.492 126.5C329.57 128.234 327.508 129.594 325.305 130.578C323.148 131.516 320.945 131.984 318.695 131.984ZM337.258 80.1641C336.32 80.1641 335.312 80.8906 334.234 82.3438C333.156 83.7969 332.078 85.6953 331 88.0391C329.922 90.3359 328.867 92.9609 327.836 95.9141C326.805 98.8203 325.867 101.727 325.023 104.633L336.977 95.1406C337.539 93.125 338.055 91.1562 338.523 89.2344C338.992 87.2656 339.227 85.7891 339.227 84.8047C339.227 84.2891 339.18 83.7734 339.086 83.2578C339.039 82.6953 338.945 82.1797 338.805 81.7109C338.664 81.2422 338.453 80.8672 338.172 80.5859C337.938 80.3047 337.633 80.1641 337.258 80.1641ZM351.672 131C351.156 131.094 350.594 131.164 349.984 131.211C348.906 131.352 347.5 131.422 345.766 131.422C344.969 131.422 344.125 131.375 343.234 131.281C342.344 131.234 341.477 131.141 340.633 131L340.141 130.297C340.375 129.828 340.797 128.867 341.406 127.414C341.969 125.961 342.648 124.203 343.445 122.141C344.195 120.078 345.039 117.781 345.977 115.25C346.867 112.719 347.758 110.141 348.648 107.516C349.539 104.891 350.406 102.312 351.25 99.7812C352.094 97.25 352.82 94.9297 353.43 92.8203C354.086 90.7109 354.602 88.9297 354.977 87.4766C355.398 85.9766 355.609 84.9688 355.609 84.4531C355.609 83.9375 355.539 83.5391 355.398 83.2578C355.305 82.9766 355.211 82.7188 355.117 82.4844C354.977 82.2969 354.836 82.1094 354.695 81.9219V80.8672C355.773 80.2109 357.039 79.625 358.492 79.1094C359.945 78.5938 361.352 78.1719 362.711 77.8438C364.258 77.4688 365.875 77.1406 367.562 76.8594L367.844 77.2812C367.844 77.8438 367.727 78.7578 367.492 80.0234C367.258 81.2891 366.977 82.6484 366.648 84.1016C366.32 85.5547 365.969 86.9844 365.594 88.3906C365.266 89.75 365.008 90.8516 364.82 91.6953C366.273 89.8672 367.75 88.0391 369.25 86.2109C370.75 84.3359 372.18 82.6719 373.539 81.2188C374.945 79.7656 376.234 78.5938 377.406 77.7031C378.578 76.7656 379.562 76.2969 380.359 76.2969C380.688 76.2969 381.25 76.4609 382.047 76.7891C382.891 77.0703 383.758 77.5391 384.648 78.1953C385.539 78.8047 386.312 79.6016 386.969 80.5859C387.672 81.5234 388.047 82.6719 388.094 84.0312C388.094 84.5 387.766 85.5781 387.109 87.2656C386.453 88.9531 385.633 90.9688 384.648 93.3125C383.711 95.6562 382.68 98.2109 381.555 100.977C380.43 103.742 379.375 106.461 378.391 109.133C377.453 111.805 376.656 114.289 376 116.586C375.344 118.883 375.016 120.758 375.016 122.211C375.016 122.773 375.062 123.195 375.156 123.477C375.297 123.711 375.578 123.828 376 123.828C376.516 123.781 377.289 123.523 378.32 123.055C379.352 122.539 380.547 121.789 381.906 120.805C383.266 119.82 384.719 118.625 386.266 117.219C387.859 115.766 389.43 114.078 390.977 112.156L392.594 113.562C390.625 116.047 388.398 118.414 385.914 120.664C383.477 122.867 381.062 124.812 378.672 126.5C376.281 128.188 374.031 129.523 371.922 130.508C369.812 131.492 368.102 131.984 366.789 131.984C366.555 131.984 366.25 131.891 365.875 131.703C365.5 131.516 365.125 131.211 364.75 130.789C364.375 130.367 364.047 129.781 363.766 129.031C363.484 128.281 363.344 127.344 363.344 126.219C363.344 125.656 363.414 124.953 363.555 124.109C363.695 123.219 363.859 122.328 364.047 121.438C364.234 120.5 364.422 119.656 364.609 118.906C364.844 118.109 365.008 117.523 365.102 117.148C365.523 115.508 366.109 113.68 366.859 111.664C367.656 109.602 368.5 107.469 369.391 105.266C370.281 103.062 371.195 100.883 372.133 98.7266C373.07 96.5234 373.914 94.4844 374.664 92.6094C375.414 90.6875 376.023 89.0234 376.492 87.6172C376.961 86.1641 377.195 85.0625 377.195 84.3125C377.195 83.6562 377.008 83.3281 376.633 83.3281C376.164 83.3281 375.344 83.8438 374.172 84.875C373.047 85.9062 371.781 87.1953 370.375 88.7422C369.016 90.2422 367.633 91.8359 366.227 93.5234C364.82 95.1641 363.625 96.6172 362.641 97.8828C361.656 100.742 360.625 103.695 359.547 106.742C358.469 109.742 357.438 112.719 356.453 115.672C355.469 118.578 354.555 121.344 353.711 123.969C352.914 126.594 352.234 128.938 351.672 131ZM431.547 43.8828C431.547 42.8516 431.266 42.1484 430.703 41.7734C430.188 41.3516 429.531 41.1641 428.734 41.2109C427.938 41.2578 427.07 41.4453 426.133 41.7734C425.195 42.0547 424.328 42.3828 423.531 42.7578L422.617 40.8594C427.445 38.5156 431.359 36.875 434.359 35.9375C437.406 35 439.492 34.5312 440.617 34.5312C440.945 34.5312 441.32 34.6719 441.742 34.9531C442.211 35.1875 442.633 35.5391 443.008 36.0078C443.383 36.4766 443.711 37.0156 443.992 37.625C444.273 38.1875 444.414 38.7734 444.414 39.3828C444.414 39.7578 443.875 41.3281 442.797 44.0938C441.719 46.8125 440.43 50.3984 438.93 54.8516C438.039 57.4766 437.055 60.3594 435.977 63.5C434.898 66.6406 433.75 69.9219 432.531 73.3438C431.359 76.7188 430.164 80.1641 428.945 83.6797C427.773 87.1953 426.625 90.6172 425.5 93.9453C424.375 97.2734 423.297 100.461 422.266 103.508C421.281 106.508 420.414 109.203 419.664 111.594C418.961 113.984 418.398 116.023 417.977 117.711C417.555 119.352 417.344 120.477 417.344 121.086C417.344 121.93 417.672 122.352 418.328 122.352C418.844 122.305 419.617 122.047 420.648 121.578C421.68 121.062 422.852 120.312 424.164 119.328C425.523 118.344 426.977 117.148 428.523 115.742C430.117 114.289 431.711 112.602 433.305 110.68L434.852 112.156C432.789 114.641 430.586 117.055 428.242 119.398C425.898 121.695 423.578 123.734 421.281 125.516C419.031 127.297 416.898 128.727 414.883 129.805C412.914 130.883 411.273 131.422 409.961 131.422C409.305 131.422 408.766 131.141 408.344 130.578C407.922 129.969 407.57 129.219 407.289 128.328C407.055 127.438 406.891 126.5 406.797 125.516C406.703 124.531 406.656 123.617 406.656 122.773C406.656 122.398 406.703 121.977 406.797 121.508C406.938 120.992 407.078 120.359 407.219 119.609C405.672 121.25 403.984 122.82 402.156 124.32C400.375 125.773 398.641 127.062 396.953 128.188C395.312 129.266 393.836 130.133 392.523 130.789C391.164 131.398 390.203 131.703 389.641 131.703C389.125 131.703 388.727 131.469 388.445 131C388.117 130.578 387.883 130.062 387.742 129.453C387.555 128.797 387.438 128.141 387.391 127.484C387.297 126.781 387.25 126.172 387.25 125.656C387.25 124.016 387.438 122.141 387.812 120.031C388.188 117.922 388.656 115.742 389.219 113.492C389.734 111.242 390.344 109.039 391.047 106.883C391.703 104.68 392.336 102.688 392.945 100.906C393.555 99.0781 394.094 97.5547 394.562 96.3359C395.031 95.0703 395.359 94.25 395.547 93.875C396.391 92.0469 397.68 90.2188 399.414 88.3906C401.148 86.5625 403.188 84.7812 405.531 83.0469C407.875 81.3125 410.43 79.6719 413.195 78.125C416.008 76.5312 418.867 75.1016 421.773 73.8359C423.086 69.9922 424.328 66.3594 425.5 62.9375C426.719 59.4688 427.773 56.3984 428.664 53.7266C429.555 51.0547 430.258 48.8516 430.773 47.1172C431.289 45.3828 431.547 44.3047 431.547 43.8828ZM407.992 115.039C408.836 112.414 409.75 109.602 410.734 106.602C411.719 103.555 412.727 100.438 413.758 97.25C414.836 94.0625 415.938 90.8281 417.062 87.5469C418.188 84.2656 419.289 81.0312 420.367 77.8438C419.055 78.2188 417.742 78.7578 416.43 79.4609C415.164 80.1172 414.156 80.7266 413.406 81.2891C412.188 82.2266 410.945 83.8203 409.68 86.0703C408.461 88.2734 407.289 90.7812 406.164 93.5938C405.039 96.3594 403.984 99.2422 403 102.242C402.062 105.242 401.242 108.055 400.539 110.68C399.836 113.258 399.273 115.461 398.852 117.289C398.477 119.07 398.289 120.125 398.289 120.453C398.289 120.828 398.312 121.18 398.359 121.508C398.453 121.789 398.688 121.93 399.062 121.93C399.438 121.93 399.977 121.742 400.68 121.367C401.383 120.992 402.133 120.5 402.93 119.891C403.773 119.234 404.641 118.484 405.531 117.641C406.422 116.797 407.242 115.93 407.992 115.039ZM437.242 131.984C436.211 131.984 435.18 131.656 434.148 131C433.117 130.297 432.18 129.43 431.336 128.398C430.492 127.32 429.812 126.148 429.297 124.883C428.734 123.617 428.453 122.398 428.453 121.227C428.453 119.82 428.641 118.227 429.016 116.445C429.344 114.664 429.789 112.812 430.352 110.891C430.867 108.969 431.453 107.07 432.109 105.195C432.766 103.32 433.398 101.609 434.008 100.062C434.57 98.4688 435.086 97.1094 435.555 95.9844C435.977 94.8594 436.281 94.1094 436.469 93.7344C437.406 91.4844 438.859 89.3047 440.828 87.1953C442.844 85.0859 445.023 83.2109 447.367 81.5703C449.758 79.9297 452.148 78.6172 454.539 77.6328C456.977 76.6484 459.109 76.1562 460.938 76.1562C462.438 76.1562 463.656 76.9766 464.594 78.6172C465.531 80.2578 466 82.3203 466 84.8047C466 86.0703 465.695 87.3125 465.086 88.5312C464.523 89.75 463.773 90.8984 462.836 91.9766C461.945 93.0547 460.961 94.0625 459.883 95C458.852 95.9375 457.867 96.7578 456.93 97.4609L442.234 108.711C441.391 111.898 440.688 114.734 440.125 117.219C439.609 119.656 439.352 121.32 439.352 122.211C439.352 123.57 439.539 124.602 439.914 125.305C440.289 126.008 441.062 126.359 442.234 126.359C444.719 126.359 447.297 125.141 449.969 122.703C452.641 120.219 455.242 116.258 457.773 110.82L459.812 112.156C458.547 115.109 457.07 117.805 455.383 120.242C453.742 122.68 451.961 124.766 450.039 126.5C448.117 128.234 446.055 129.594 443.852 130.578C441.695 131.516 439.492 131.984 437.242 131.984ZM455.805 80.1641C454.867 80.1641 453.859 80.8906 452.781 82.3438C451.703 83.7969 450.625 85.6953 449.547 88.0391C448.469 90.3359 447.414 92.9609 446.383 95.9141C445.352 98.8203 444.414 101.727 443.57 104.633L455.523 95.1406C456.086 93.125 456.602 91.1562 457.07 89.2344C457.539 87.2656 457.773 85.7891 457.773 84.8047C457.773 84.2891 457.727 83.7734 457.633 83.2578C457.586 82.6953 457.492 82.1797 457.352 81.7109C457.211 81.2422 457 80.8672 456.719 80.5859C456.484 80.3047 456.18 80.1641 455.805 80.1641ZM469.656 131C469.141 131.094 468.578 131.164 467.969 131.211C466.891 131.352 465.484 131.422 463.75 131.422C462.953 131.422 462.109 131.375 461.219 131.281C460.328 131.234 459.438 131.141 458.547 131L458.125 130.297C458.359 129.828 458.781 128.867 459.391 127.414C459.953 125.961 460.633 124.203 461.43 122.141C462.18 120.078 463 117.781 463.891 115.25C464.781 112.719 465.695 110.141 466.633 107.516C467.523 104.891 468.391 102.312 469.234 99.7812C470.031 97.25 470.758 94.9297 471.414 92.8203C472.07 90.7109 472.586 88.9297 472.961 87.4766C473.336 85.9766 473.523 84.9688 473.523 84.4531C473.523 83.9375 473.477 83.5391 473.383 83.2578C473.289 82.9766 473.195 82.7188 473.102 82.4844C472.961 82.2969 472.82 82.1094 472.68 81.9219V80.8672C473.758 80.2109 475 79.625 476.406 79.1094C477.859 78.5938 479.266 78.1719 480.625 77.8438C482.172 77.4688 483.789 77.1406 485.477 76.8594L485.828 77.2812C485.828 77.7031 485.711 78.3594 485.477 79.25C485.289 80.1406 485.031 81.1484 484.703 82.2734C484.375 83.3516 484.023 84.4766 483.648 85.6484C483.273 86.8203 482.898 87.9219 482.523 88.9531C482.195 89.9844 481.891 90.875 481.609 91.625C481.375 92.375 481.234 92.8672 481.188 93.1016C480.156 95.8672 479.148 98.7734 478.164 101.82C477.18 104.867 476.219 107.914 475.281 110.961C476.359 108.289 477.484 105.594 478.656 102.875C479.875 100.109 481.094 97.4609 482.312 94.9297C483.531 92.3516 484.773 89.9375 486.039 87.6875C487.352 85.3906 488.617 83.4219 489.836 81.7812C491.055 80.0938 492.25 78.7578 493.422 77.7734C494.641 76.7891 495.789 76.2969 496.867 76.2969C497.195 76.2969 497.688 76.4375 498.344 76.7188C499 76.9531 499.68 77.3047 500.383 77.7734C501.086 78.2422 501.766 78.8281 502.422 79.5312C503.125 80.1875 503.688 80.9375 504.109 81.7812C504.297 82.0625 504.133 82.8594 503.617 84.1719C503.102 85.4375 502.258 86.9609 501.086 88.7422C499.914 90.4766 498.438 92.3281 496.656 94.2969C494.875 96.2188 492.789 98 490.398 99.6406L488.641 98.7266C489.391 97.1797 489.977 95.8672 490.398 94.7891C490.867 93.6641 491.219 92.7031 491.453 91.9062C491.688 91.0625 491.828 90.3359 491.875 89.7266C491.969 89.1172 492.016 88.5312 492.016 87.9688C492.016 87.2656 491.805 86.9141 491.383 86.9141C490.727 86.9141 489.883 87.5703 488.852 88.8828C487.867 90.1484 486.766 91.8828 485.547 94.0859C484.375 96.2891 483.109 98.8672 481.75 101.82C480.438 104.727 479.078 107.82 477.672 111.102C476.312 114.336 474.93 117.664 473.523 121.086C472.164 124.508 470.875 127.812 469.656 131Z",
+          fill: "black"
+        }
+      }),
+      _vm._v(" "),
+      _c("g", { attrs: { "clip-path": "url(#clip0)" } }, [
+        _c("path", {
+          attrs: {
+            d:
+              "M612.25 102C612.045 102 611.84 101.965 611.645 101.9L562.27 85.0254C561.56 84.7804 561.065 84.1404 561.005 83.3929C560.95 82.6454 561.342 81.9354 562.005 81.5879L618.255 52.2129C618.882 51.8904 619.64 51.9404 620.21 52.3479C620.785 52.7579 621.082 53.4529 620.98 54.1529L614.105 100.403C614.022 100.953 613.7 101.438 613.222 101.728C612.927 101.908 612.59 102 612.25 102V102ZM567.615 82.8879L610.725 97.6229L616.727 57.2429L567.615 82.8879Z",
+            fill: "black"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M584.75 109.5C584.555 109.5 584.358 109.47 584.168 109.407C583.395 109.152 582.875 108.435 582.875 107.625V90.75C582.875 90.2775 583.055 89.8175 583.378 89.47L617.753 52.595C618.458 51.835 619.65 51.7975 620.405 52.5025C621.163 53.2075 621.203 54.395 620.498 55.155L586.625 91.4875V101.907L592.883 93.39C593.495 92.56 594.67 92.375 595.505 92.99C596.34 93.6025 596.518 94.7775 595.905 95.6125L586.262 108.737C585.9 109.225 585.335 109.5 584.75 109.5V109.5Z",
+            fill: "black"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "mask",
+        {
+          attrs: {
+            id: "mask0",
+            "mask-type": "alpha",
+            maskUnits: "userSpaceOnUse",
+            x: "-1",
+            y: "10",
+            width: "581",
+            height: "220"
+          }
+        },
+        [
+          _c("path", {
+            attrs: {
+              d:
+                "M579.591 117.03C580.159 116.427 580.132 115.478 579.53 114.909C578.927 114.341 577.978 114.368 577.409 114.97L579.591 117.03ZM263.5 12L263.5 10.5L263.5 12ZM240.5 176.5L239.352 175.535L239.352 175.535L240.5 176.5ZM1.33158 71.5095C0.508392 71.6025 -0.0835306 72.3452 0.00948506 73.1684C0.102501 73.9916 0.845231 74.5835 1.66842 74.4905L1.33158 71.5095ZM5.58082 74.2545C6.40919 74.2449 7.07301 73.5657 7.06349 72.7373C7.05397 71.909 6.37473 71.2451 5.54636 71.2547L5.58082 74.2545ZM16.069 72.1682C15.2525 72.028 14.4769 72.5761 14.3366 73.3926C14.1963 74.209 14.7445 74.9846 15.5609 75.1249L16.069 72.1682ZM25.4079 77.4436C26.2032 77.6758 27.036 77.2193 27.2682 76.4241C27.5004 75.6289 27.0439 74.796 26.2487 74.5638L25.4079 77.4436ZM34.1722 77.1654C33.3932 76.8834 32.5332 77.2863 32.2512 78.0653C31.9692 78.8443 32.3721 79.7043 33.1511 79.9863L34.1722 77.1654ZM42.673 83.7658C43.4344 84.0923 44.3163 83.7398 44.6428 82.9785C44.9694 82.2171 44.6169 81.3352 43.8556 81.0086L42.673 83.7658ZM49.51 83.5263C48.7576 83.1796 47.8666 83.5084 47.5199 84.2608C47.1731 85.0132 47.502 85.9042 48.2543 86.2509L49.51 83.5263ZM55.6498 89.7962C56.3917 90.1648 57.2919 89.8622 57.6605 89.1203C58.0291 88.3784 57.7265 87.4781 56.9846 87.1095L55.6498 89.7962ZM66.1827 91.8524C65.4517 91.4626 64.5431 91.7393 64.1534 92.4703C63.7636 93.2014 64.0403 94.1099 64.7713 94.4997L66.1827 91.8524ZM73.7805 99.4373C74.5027 99.8432 75.4172 99.5867 75.823 98.8645C76.2289 98.1423 75.9724 97.2279 75.2502 96.822L73.7805 99.4373ZM82.4312 100.927C81.7148 100.511 80.7968 100.754 80.3808 101.471C79.9648 102.187 80.2083 103.105 80.9246 103.521L82.4312 100.927ZM89.7813 108.752C90.4918 109.178 91.4131 108.947 91.8392 108.237C92.2652 107.526 92.0347 106.605 91.3242 106.179L89.7813 108.752ZM96.629 109.385C95.9215 108.954 94.9986 109.179 94.5677 109.886C94.1369 110.594 94.3612 111.517 95.0688 111.947L96.629 109.385ZM102.079 116.252C102.783 116.688 103.707 116.471 104.143 115.766C104.579 115.062 104.362 114.138 103.657 113.702L102.079 116.252ZM112.41 119.163C111.709 118.722 110.783 118.933 110.342 119.635C109.901 120.336 110.113 121.262 110.814 121.703L112.41 119.163ZM119.524 127.203C120.224 127.646 121.151 127.439 121.594 126.739C122.038 126.039 121.83 125.113 121.131 124.669L119.524 127.203ZM128.092 129.092C127.393 128.647 126.466 128.853 126.021 129.552C125.576 130.251 125.782 131.178 126.481 131.623L128.092 129.092ZM135.175 137.155C135.874 137.599 136.801 137.393 137.246 136.694C137.69 135.995 137.484 135.068 136.785 134.623L135.175 137.155ZM141.999 137.934C141.299 137.49 140.372 137.698 139.929 138.398C139.485 139.097 139.693 140.024 140.393 140.468L141.999 137.934ZM147.376 144.878C148.078 145.319 149.004 145.108 149.445 144.407C149.886 143.706 149.675 142.78 148.973 142.339L147.376 144.878ZM157.708 147.791C157.003 147.355 156.079 147.573 155.643 148.277C155.207 148.982 155.425 149.906 156.129 150.342L157.708 147.791ZM164.935 155.729C165.644 156.157 166.566 155.929 166.994 155.22C167.423 154.511 167.195 153.589 166.485 153.16L164.935 155.729ZM173.556 157.372C172.842 156.953 171.923 157.192 171.503 157.906C171.084 158.621 171.323 159.54 172.038 159.959L173.556 157.372ZM181.007 165.102C181.73 165.506 182.644 165.247 183.048 164.524C183.452 163.8 183.193 162.887 182.47 162.483L181.007 165.102ZM187.859 165.435C187.129 165.043 186.219 165.317 185.828 166.048C185.436 166.778 185.711 167.687 186.441 168.078L187.859 165.435ZM193.796 171.891C194.537 172.26 195.438 171.959 195.807 171.218C196.177 170.476 195.876 169.575 195.134 169.206L193.796 171.891ZM204.417 173.545C203.656 173.216 202.773 173.566 202.445 174.327C202.116 175.087 202.466 175.97 203.227 176.299L204.417 173.545ZM212.895 180.017C213.682 180.276 214.53 179.848 214.789 179.062C215.048 178.275 214.621 177.427 213.834 177.167L212.895 180.017ZM221.678 179.259C220.864 179.102 220.078 179.635 219.921 180.448C219.764 181.262 220.297 182.048 221.11 182.205L221.678 179.259ZM231.851 182.687C232.67 182.564 233.234 181.799 233.11 180.98C232.986 180.161 232.222 179.597 231.403 179.721L231.851 182.687ZM236.602 177.912C235.896 178.346 235.675 179.27 236.109 179.976C236.543 180.681 237.467 180.902 238.172 180.468L236.602 177.912ZM244.269 173.812C244.697 173.103 244.47 172.181 243.761 171.752C243.052 171.324 242.13 171.551 241.702 172.26L244.269 173.812ZM245.096 162.924C244.96 163.741 245.513 164.514 246.33 164.65C247.147 164.785 247.92 164.233 248.056 163.416L245.096 162.924ZM248.256 152.473C248.167 151.649 247.427 151.053 246.603 151.142C245.78 151.231 245.184 151.971 245.273 152.795L248.256 152.473ZM243.772 144.644C243.975 145.447 244.79 145.935 245.593 145.732C246.396 145.53 246.884 144.715 246.681 143.911L243.772 144.644ZM243.452 133.689C243.163 132.913 242.299 132.518 241.523 132.807C240.746 133.096 240.351 133.959 240.64 134.736L243.452 133.689ZM238.308 128.891C238.631 129.654 239.512 130.01 240.274 129.687C241.037 129.364 241.393 128.483 241.07 127.721L238.308 128.891ZM237.565 119.935C237.21 119.186 236.315 118.867 235.567 119.222C234.818 119.576 234.499 120.471 234.854 121.22L237.565 119.935ZM230.163 111.758C230.542 112.495 231.446 112.785 232.183 112.407C232.92 112.028 233.21 111.124 232.832 110.387L230.163 111.758ZM227.902 100.99C227.513 100.258 226.605 99.9808 225.873 100.37C225.142 100.759 224.865 101.667 225.254 102.399L227.902 100.99ZM221.264 94.9181C221.653 95.6493 222.562 95.9264 223.293 95.5371C224.024 95.1477 224.301 94.2393 223.912 93.5081L221.264 94.9181ZM218.995 84.1503C218.616 83.4137 217.712 83.124 216.975 83.5031C216.239 83.8822 215.949 84.7867 216.328 85.5233L218.995 84.1503ZM213.449 79.818C213.815 80.561 214.715 80.8664 215.458 80.5C216.201 80.1336 216.506 79.2343 216.14 78.4913L213.449 79.818ZM212.545 70.8843C212.206 70.1285 211.319 69.7908 210.563 70.1299C209.807 70.4691 209.469 71.3568 209.808 72.1126L212.545 70.8843ZM205.762 62.1882C206.043 62.9677 206.902 63.3722 207.682 63.0918C208.461 62.8113 208.866 61.952 208.585 61.1725L205.762 62.1882ZM205.682 51.2481C205.509 50.4379 204.712 49.9213 203.902 50.0942C203.092 50.2672 202.575 51.0641 202.748 51.8743L205.682 51.2481ZM201.665 43.1564C201.682 43.9846 202.368 44.6415 203.197 44.6235C204.025 44.6056 204.682 43.9196 204.664 43.0914L201.665 43.1564ZM206.224 33.3047C206.524 32.5325 206.142 31.6633 205.369 31.3633C204.597 31.0634 203.728 31.4462 203.428 32.2184L206.224 33.3047ZM206.765 26.3357C206.257 26.9895 206.374 27.932 207.028 28.4406C207.682 28.9493 208.624 28.8315 209.133 28.1776L206.765 26.3357ZM214.961 22.8729C215.651 22.414 215.838 21.4828 215.379 20.7931C214.92 20.1035 213.989 19.9164 213.299 20.3754L214.961 22.8729ZM223.226 15.5989C222.443 15.8702 222.029 16.7247 222.3 17.5074C222.571 18.2902 223.426 18.7048 224.209 18.4335L223.226 15.5989ZM234.121 15.8379C234.935 15.6808 235.467 14.894 235.31 14.0806C235.153 13.2672 234.366 12.7352 233.552 12.8923L234.121 15.8379ZM242.069 11.5986C241.246 11.6937 240.656 12.4378 240.751 13.2608C240.846 14.0838 241.59 14.6739 242.413 14.5788L242.069 11.5986ZM252.881 13.7435C253.708 13.7035 254.347 13.0003 254.307 12.1728C254.267 11.3454 253.564 10.707 252.736 10.747L252.881 13.7435ZM259.046 10.5398C258.218 10.5549 257.559 11.2386 257.574 12.0669C257.589 12.8952 258.273 13.5544 259.101 13.5393L259.046 10.5398ZM267.543 13.5338C268.371 13.5475 269.054 12.8872 269.068 12.0589C269.081 11.2306 268.421 10.548 267.593 10.5342L267.543 13.5338ZM277.885 10.9129C277.058 10.8661 276.35 11.4987 276.303 12.3259C276.256 13.153 276.889 13.8614 277.716 13.9081L277.885 10.9129ZM287.847 14.6709C288.672 14.7482 289.403 14.1422 289.48 13.3174C289.558 12.4926 288.952 11.7613 288.127 11.684L287.847 14.6709ZM296.293 12.5651C295.471 12.4649 294.723 13.0503 294.623 13.8726C294.522 14.695 295.108 15.4429 295.93 15.5431L296.293 12.5651ZM306.019 16.9432C306.838 17.0704 307.605 16.5099 307.732 15.6913C307.859 14.8727 307.299 14.1059 306.48 13.9787L306.019 16.9432ZM312.552 14.9808C311.735 14.8383 310.958 15.3843 310.816 16.2004C310.673 17.0165 311.219 17.7936 312.036 17.9361L312.552 14.9808ZM320.049 19.4353C320.861 19.5974 321.651 19.0701 321.813 18.2577C321.975 17.4453 321.448 16.6553 320.636 16.4933L320.049 19.4353ZM330.678 18.6466C329.87 18.4615 329.065 18.966 328.88 19.7735C328.695 20.581 329.2 21.3857 330.007 21.5708L330.678 18.6466ZM339.895 23.9796C340.697 24.1865 341.515 23.7038 341.722 22.9017C341.929 22.0995 341.446 21.2815 340.644 21.0746L339.895 23.9796ZM348.579 23.2089C347.781 22.9855 346.953 23.4511 346.73 24.2488C346.506 25.0465 346.972 25.8743 347.77 26.0977L348.579 23.2089ZM357.546 28.968C358.338 29.2111 359.177 28.7662 359.42 27.9743C359.663 27.1824 359.218 26.3433 358.427 26.1001L357.546 28.968ZM364.297 27.949C363.508 27.6945 362.663 28.1272 362.408 28.9156C362.154 29.7039 362.587 30.5494 363.375 30.8039L364.297 27.949ZM371.11 33.3821C371.894 33.6513 372.747 33.2345 373.016 32.4511C373.286 31.6676 372.869 30.8142 372.085 30.545L371.11 33.3821ZM381.749 33.99C380.972 33.7031 380.109 34.1004 379.822 34.8775C379.535 35.6547 379.933 36.5173 380.71 36.8043L381.749 33.99ZM390.233 40.4415C391.004 40.7456 391.875 40.3674 392.179 39.5968C392.483 38.8262 392.105 37.955 391.334 37.6509L390.233 40.4415ZM398.938 40.7276C398.173 40.4103 397.296 40.7734 396.978 41.5387C396.661 42.3039 397.024 43.1815 397.789 43.4988L398.938 40.7276ZM407.169 47.5055C407.927 47.8389 408.812 47.4945 409.145 46.7362C409.479 45.9778 409.135 45.0928 408.376 44.7593L407.169 47.5055ZM413.985 47.2681C413.231 46.9252 412.342 47.2584 411.999 48.0125C411.656 48.7666 411.989 49.656 412.743 49.999L413.985 47.2681ZM420.149 53.4421C420.898 53.7976 421.792 53.4792 422.148 52.731C422.503 51.9827 422.185 51.0879 421.437 50.7324L420.149 53.4421ZM430.656 55.23C429.915 54.859 429.014 55.1588 428.643 55.8996C428.272 56.6403 428.572 57.5415 429.312 57.9124L430.656 55.23ZM438.367 62.5642C439.1 62.9503 440.007 62.6692 440.393 61.9363C440.78 61.2034 440.498 60.2962 439.766 59.91L438.367 62.5642ZM447.008 63.8039C446.282 63.4055 445.37 63.6714 444.972 64.3977C444.573 65.1241 444.839 66.0359 445.566 66.4342L447.008 63.8039ZM454.454 71.4318C455.172 71.8454 456.089 71.5989 456.503 70.8811C456.917 70.1633 456.67 69.2461 455.952 68.8325L454.454 71.4318ZM461.254 71.9331C460.541 71.5103 459.621 71.745 459.198 72.4574C458.776 73.1698 459.01 74.0901 459.723 74.5129L461.254 71.9331ZM466.713 78.7447C467.417 79.1799 468.342 78.9614 468.777 78.2565C469.212 77.5516 468.994 76.6274 468.289 76.1921L466.713 78.7447ZM476.948 81.6743C476.253 81.2233 475.324 81.4209 474.873 82.1158C474.422 82.8106 474.62 83.7396 475.315 84.1907L476.948 81.6743ZM483.773 89.8227C484.457 90.29 485.39 90.1143 485.858 89.4302C486.325 88.7462 486.149 87.8128 485.465 87.3455L483.773 89.8227ZM492.233 92.0675C491.558 91.5867 490.621 91.7437 490.141 92.4183C489.66 93.0929 489.817 94.0296 490.491 94.5104L492.233 92.0675ZM498.713 100.534C499.375 101.032 500.315 100.9 500.814 100.238C501.312 99.5767 501.18 98.6362 500.518 98.1377L498.713 100.534ZM505.373 101.858C504.719 101.349 503.777 101.465 503.267 102.118C502.758 102.772 502.874 103.714 503.528 104.224L505.373 101.858ZM509.924 109.335C510.565 109.86 511.51 109.766 512.035 109.125C512.56 108.484 512.466 107.539 511.825 107.014L509.924 109.335ZM519.673 113.658C519.049 113.112 518.102 113.175 517.556 113.798C517.01 114.421 517.073 115.369 517.696 115.915L519.673 113.658ZM525.225 122.754C525.828 123.322 526.777 123.295 527.346 122.692C527.914 122.09 527.887 121.141 527.284 120.572L525.225 122.754ZM533.162 126.306C532.579 125.717 531.629 125.712 531.04 126.295C530.452 126.878 530.447 127.828 531.03 128.417L533.162 126.306ZM537.997 135.801C538.55 136.418 539.499 136.47 540.116 135.917C540.732 135.364 540.784 134.416 540.232 133.799L537.997 135.801ZM544.271 138.465C543.74 137.829 542.794 137.744 542.159 138.275C541.523 138.806 541.438 139.752 541.969 140.388L544.271 138.465ZM547.003 146.756C547.498 147.42 548.438 147.557 549.102 147.062C549.766 146.567 549.904 145.627 549.409 144.963L547.003 146.756ZM555.217 153.483C554.782 152.777 553.858 152.558 553.153 152.992C552.448 153.426 552.228 154.35 552.662 155.056L555.217 153.483ZM557.437 163.935C557.779 164.689 558.669 165.022 559.423 164.679C560.177 164.337 560.51 163.447 560.168 162.693L557.437 163.935ZM563.118 170.556C562.887 169.761 562.054 169.304 561.259 169.535C560.464 169.766 560.006 170.599 560.238 171.394L563.118 170.556ZM561.779 181.021C561.789 181.85 562.47 182.512 563.298 182.501C564.126 182.491 564.789 181.81 564.778 180.982L561.779 181.021ZM564.159 187.411C564.334 186.601 563.819 185.803 563.009 185.629C562.199 185.454 561.401 185.969 561.226 186.779L564.159 187.411ZM558.653 193.791C558.302 194.541 558.625 195.434 559.375 195.785C560.125 196.137 561.018 195.813 561.37 195.063L558.653 193.791ZM556.718 203.349C557.177 202.66 556.99 201.728 556.301 201.269C555.611 200.81 554.68 200.997 554.221 201.687L556.718 203.349ZM548.633 208.784C548.069 209.391 548.105 210.34 548.712 210.904C549.319 211.468 550.268 211.432 550.832 210.825L548.633 208.784ZM545.291 216.05C545.931 215.523 546.022 214.578 545.495 213.938C544.968 213.299 544.023 213.208 543.384 213.735L545.291 216.05ZM535.959 218.871C535.241 219.284 534.993 220.201 535.406 220.919C535.818 221.637 536.735 221.885 537.454 221.472L535.959 218.871ZM532.356 224.072C533.112 223.733 533.45 222.845 533.11 222.089C532.771 221.334 531.883 220.996 531.127 221.335L532.356 224.072ZM524.354 223.862C523.56 224.101 523.111 224.938 523.35 225.731C523.589 226.524 524.426 226.974 525.219 226.735L524.354 223.862ZM515.921 228.754C516.741 228.641 517.316 227.885 517.204 227.064C517.091 226.243 516.335 225.669 515.514 225.781L515.921 228.754ZM506.478 226.319C505.65 226.306 504.967 226.966 504.954 227.794C504.94 228.623 505.601 229.305 506.429 229.319L506.478 226.319ZM498.844 228.737C499.665 228.85 500.422 228.276 500.535 227.456C500.647 226.635 500.074 225.878 499.253 225.765L498.844 228.737ZM490.401 223.861C489.607 223.626 488.772 224.079 488.537 224.874C488.302 225.668 488.756 226.502 489.55 226.738L490.401 223.861ZM484.155 224.867C484.924 225.175 485.797 224.8 486.104 224.031C486.412 223.261 486.037 222.389 485.268 222.081L484.155 224.867ZM478.729 218.98C478.005 218.579 477.092 218.84 476.69 219.565C476.288 220.289 476.55 221.202 477.274 221.604L478.729 218.98ZM469.349 216.321C469.998 216.836 470.942 216.728 471.457 216.079C471.972 215.43 471.863 214.486 471.214 213.971L469.349 216.321ZM464.651 207.785C464.099 207.167 463.151 207.114 462.533 207.666C461.915 208.217 461.861 209.166 462.413 209.784L464.651 207.785ZM457.735 203.744C458.195 204.433 459.127 204.618 459.816 204.158C460.505 203.698 460.69 202.766 460.23 202.077L457.735 203.744ZM455.894 194.172C455.559 193.414 454.674 193.071 453.916 193.405C453.158 193.739 452.814 194.625 453.149 195.383L455.894 194.172ZM451.111 190.045C451.367 190.833 452.214 191.264 453.002 191.007C453.789 190.751 454.22 189.904 453.964 189.117L451.111 190.045ZM452.114 181.732C451.974 180.916 451.198 180.368 450.381 180.508C449.565 180.649 449.017 181.424 449.157 182.241L452.114 181.732ZM449.102 171.531C448.923 172.34 449.433 173.141 450.242 173.32C451.051 173.499 451.852 172.989 452.031 172.18L449.102 171.531ZM456.809 164.665C457.465 164.16 457.589 163.218 457.084 162.561C456.579 161.905 455.637 161.782 454.98 162.287L456.809 164.665ZM462.663 158.39C461.879 158.656 461.459 159.508 461.725 160.292C461.991 161.077 462.843 161.497 463.627 161.231L462.663 158.39ZM473.273 158.907C474.089 158.763 474.634 157.985 474.49 157.169C474.347 156.353 473.569 155.808 472.753 155.952L473.273 158.907ZM478.861 154.999C478.04 155.114 477.469 155.873 477.584 156.693C477.7 157.513 478.459 158.085 479.279 157.969L478.861 154.999ZM487.329 156.91C488.151 156.805 488.732 156.054 488.627 155.233C488.523 154.411 487.772 153.829 486.95 153.934L487.329 156.91ZM497.025 152.599C496.205 152.716 495.635 153.476 495.752 154.296C495.868 155.116 496.628 155.686 497.448 155.569L497.025 152.599ZM507.554 153.953C508.37 153.805 508.911 153.025 508.764 152.21C508.616 151.394 507.836 150.853 507.02 151L507.554 153.953ZM514.952 149.399C514.144 149.581 513.636 150.383 513.818 151.192C513.999 152 514.802 152.508 515.61 152.326L514.952 149.399ZM525.561 149.76C526.356 149.526 526.811 148.692 526.578 147.898C526.344 147.103 525.511 146.648 524.716 146.881L525.561 149.76ZM530.475 145.052C529.692 145.32 529.274 146.173 529.542 146.957C529.81 147.741 530.663 148.159 531.447 147.89L530.475 145.052ZM539.157 144.976C539.922 144.658 540.285 143.781 539.967 143.016C539.649 142.251 538.772 141.888 538.007 142.206L539.157 144.976ZM547.108 137.964C546.373 138.346 546.087 139.252 546.469 139.987C546.852 140.722 547.757 141.008 548.492 140.626L547.108 137.964ZM557.426 135.462C558.124 135.016 558.327 134.088 557.881 133.39C557.435 132.693 556.507 132.489 555.809 132.935L557.426 135.462ZM562.41 128.369C561.746 128.865 561.609 129.805 562.105 130.469C562.6 131.133 563.54 131.269 564.204 130.774L562.41 128.369ZM572.184 124.245C572.802 123.693 572.855 122.745 572.303 122.127C571.75 121.51 570.802 121.457 570.184 122.009L572.184 124.245ZM574.569 117.88C573.981 118.463 573.976 119.413 574.559 120.001C575.143 120.59 576.092 120.594 576.681 120.011L574.569 117.88ZM1.66842 74.4905C2.93036 74.3479 4.23493 74.2699 5.58082 74.2545L5.54636 71.2547C4.10707 71.2712 2.70125 71.3547 1.33158 71.5095L1.66842 74.4905ZM15.5609 75.1249C18.7005 75.6644 21.9881 76.4452 25.4079 77.4436L26.2487 74.5638C22.7381 73.5389 19.3384 72.73 16.069 72.1682L15.5609 75.1249ZM33.1511 79.9863C36.2447 81.1061 39.4222 82.3715 42.673 83.7658L43.8556 81.0086C40.5587 79.5946 37.3271 78.3075 34.1722 77.1654L33.1511 79.9863ZM48.2543 86.2509C50.6861 87.3716 53.1526 88.5556 55.6498 89.7962L56.9846 87.1095C54.4637 85.8571 51.9707 84.6604 49.51 83.5263L48.2543 86.2509ZM64.7713 94.4997C67.7432 96.0841 70.7485 97.7334 73.7805 99.4373L75.2502 96.822C72.2011 95.1085 69.1763 93.4483 66.1827 91.8524L64.7713 94.4997ZM80.9246 103.521C83.8596 105.226 86.8137 106.972 89.7813 108.752L91.3242 106.179C88.346 104.393 85.3797 102.639 82.4312 100.927L80.9246 103.521ZM95.0688 111.947C97.4004 113.367 99.7378 114.804 102.079 116.252L103.657 113.702C101.311 112.249 98.9676 110.809 96.629 109.385L95.0688 111.947ZM110.814 121.703C113.72 123.528 116.625 125.364 119.524 127.203L121.131 124.669C118.229 122.829 115.32 120.991 112.41 119.163L110.814 121.703ZM126.481 131.623C129.391 133.474 132.292 135.322 135.175 137.155L136.785 134.623C133.902 132.79 131.003 130.944 128.092 129.092L126.481 131.623ZM140.393 140.468C142.735 141.952 145.063 143.423 147.376 144.878L148.973 142.339C146.664 140.886 144.338 139.416 141.999 137.934L140.393 140.468ZM156.129 150.342C159.1 152.181 162.038 153.98 164.935 155.729L166.485 153.16C163.6 151.418 160.671 149.625 157.708 147.791L156.129 150.342ZM172.038 159.959C175.084 161.747 178.076 163.465 181.007 165.102L182.47 162.483C179.56 160.858 176.586 159.15 173.556 157.372L172.038 159.959ZM186.441 168.078C188.945 169.422 191.399 170.696 193.796 171.891L195.134 169.206C192.768 168.026 190.341 166.766 187.859 165.435L186.441 168.078ZM203.227 176.299C206.598 177.755 209.828 179.006 212.895 180.017L213.834 177.167C210.869 176.19 207.724 174.974 204.417 173.545L203.227 176.299ZM221.11 182.205C225.034 182.961 228.645 183.171 231.851 182.687L231.403 179.721C228.637 180.138 225.388 179.974 221.678 179.259L221.11 182.205ZM238.172 180.468C239.473 179.669 240.636 178.67 241.648 177.465L239.352 175.535C238.545 176.495 237.627 177.282 236.602 177.912L238.172 180.468ZM241.648 177.465C242.635 176.291 243.507 175.072 244.269 173.812L241.702 172.26C241.021 173.385 240.24 174.478 239.352 175.535L241.648 177.465ZM248.056 163.416C248.637 159.916 248.664 156.252 248.256 152.473L245.273 152.795C245.658 156.358 245.625 159.743 245.096 162.924L248.056 163.416ZM246.681 143.911C245.84 140.571 244.742 137.155 243.452 133.689L240.64 134.736C241.901 138.122 242.963 141.431 243.772 144.644L246.681 143.911ZM241.07 127.721C239.98 125.146 238.803 122.548 237.565 119.935L234.854 121.22C236.078 123.802 237.236 126.362 238.308 128.891L241.07 127.721ZM232.832 110.387C231.224 107.258 229.568 104.12 227.902 100.99L225.254 102.399C226.917 105.524 228.565 108.648 230.163 111.758L232.832 110.387ZM223.912 93.5081C222.238 90.3644 220.586 87.2412 218.995 84.1503L216.328 85.5233C217.929 88.6329 219.588 91.7706 221.264 94.9181L223.912 93.5081ZM216.14 78.4913C214.872 75.9207 213.666 73.3823 212.545 70.8843L209.808 72.1126C210.947 74.6505 212.169 77.2223 213.449 79.818L216.14 78.4913ZM208.585 61.1725C207.348 57.7342 206.359 54.4183 205.682 51.2481L202.748 51.8743C203.459 55.2065 204.491 58.6551 205.762 62.1882L208.585 61.1725ZM204.664 43.0914C204.587 39.5365 205.074 36.2666 206.224 33.3047L203.428 32.2184C202.108 35.6154 201.581 39.2887 201.665 43.1564L204.664 43.0914ZM209.133 28.1776C210.627 26.2576 212.545 24.4806 214.961 22.8729L213.299 20.3754C210.641 22.1441 208.476 24.136 206.765 26.3357L209.133 28.1776ZM224.209 18.4335C227.119 17.4248 230.411 16.5544 234.121 15.8379L233.552 12.8923C229.725 13.6316 226.292 14.5364 223.226 15.5989L224.209 18.4335ZM242.413 14.5788C245.652 14.2049 249.136 13.9246 252.881 13.7435L252.736 10.747C248.932 10.931 245.381 11.2163 242.069 11.5986L242.413 14.5788ZM259.101 13.5393C260.534 13.5132 262 13.5 263.5 13.5L263.5 10.5C261.982 10.5 260.498 10.5133 259.046 10.5398L259.101 13.5393ZM263.5 13.5C264.844 13.5 266.192 13.5113 267.543 13.5338L267.593 10.5342C266.226 10.5114 264.861 10.5 263.5 10.5L263.5 13.5ZM277.716 13.9081C281.078 14.0981 284.456 14.3532 287.847 14.6709L288.127 11.684C284.7 11.3629 281.285 11.105 277.885 10.9129L277.716 13.9081ZM295.93 15.5431C299.284 15.9519 302.648 16.4193 306.019 16.9432L306.48 13.9787C303.077 13.45 299.681 12.978 296.293 12.5651L295.93 15.5431ZM312.036 17.9361C314.704 18.402 317.375 18.9021 320.049 19.4353L320.636 16.4933C317.939 15.9555 315.244 15.4509 312.552 14.9808L312.036 17.9361ZM330.007 21.5708C333.304 22.3265 336.601 23.1302 339.895 23.9796L340.644 21.0746C337.324 20.2186 334.001 19.4085 330.678 18.6466L330.007 21.5708ZM347.77 26.0977C351.034 27.0119 354.294 27.9694 357.546 28.968L358.427 26.1001C355.151 25.0944 351.867 24.1299 348.579 23.2089L347.77 26.0977ZM363.375 30.8039C365.96 31.6384 368.538 32.4981 371.11 33.3821L372.085 30.545C369.496 29.655 366.899 28.7893 364.297 27.949L363.375 30.8039ZM380.71 36.8043C383.898 37.9818 387.074 39.195 390.233 40.4415L391.334 37.6509C388.155 36.3963 384.959 35.1753 381.749 33.99L380.71 36.8043ZM397.789 43.4988C400.935 44.8031 404.062 46.1394 407.169 47.5055L408.376 44.7593C405.251 43.3847 402.104 42.0401 398.938 40.7276L397.789 43.4988ZM412.743 49.999C415.227 51.1286 417.696 52.2767 420.149 53.4421L421.437 50.7324C418.969 49.5598 416.484 48.4047 413.985 47.2681L412.743 49.999ZM429.312 57.9124C432.36 59.4384 435.379 60.9897 438.367 62.5642L439.766 59.91C436.759 58.326 433.722 56.7652 430.656 55.23L429.312 57.9124ZM445.566 66.4342C448.564 68.0788 451.528 69.7454 454.454 71.4318L455.952 68.8325C453.008 67.1356 450.025 65.4585 447.008 63.8039L445.566 66.4342ZM459.723 74.5129C462.08 75.9118 464.41 77.3228 466.713 78.7447L468.289 76.1921C465.971 74.761 463.626 73.3409 461.254 71.9331L459.723 74.5129ZM475.315 84.1907C478.185 86.0539 481.006 87.9322 483.773 89.8227L485.465 87.3455C482.678 85.4416 479.838 83.5503 476.948 81.6743L475.315 84.1907ZM490.491 94.5104C493.295 96.5087 496.037 98.5177 498.713 100.534L500.518 98.1377C497.82 96.1053 495.057 94.0808 492.233 92.0675L490.491 94.5104ZM503.528 104.224C505.708 105.924 507.841 107.629 509.924 109.335L511.825 107.014C509.723 105.292 507.572 103.573 505.373 101.858L503.528 104.224ZM517.696 115.915C520.303 118.198 522.815 120.479 525.225 122.754L527.284 120.572C524.846 118.271 522.307 115.964 519.673 113.658L517.696 115.915ZM531.03 128.417C533.482 130.893 535.807 133.357 537.997 135.801L540.232 133.799C538.006 131.315 535.647 128.816 533.162 126.306L531.03 128.417ZM541.969 140.388C543.758 142.531 545.438 144.655 547.003 146.756L549.409 144.963C547.808 142.815 546.094 140.647 544.271 138.465L541.969 140.388ZM552.662 155.056C554.531 158.09 556.127 161.054 557.437 163.935L560.168 162.693C558.799 159.684 557.142 156.609 555.217 153.483L552.662 155.056ZM560.238 171.394C561.221 174.774 561.739 177.99 561.779 181.021L564.778 180.982C564.735 177.638 564.164 174.152 563.118 170.556L560.238 171.394ZM561.226 186.779C560.955 188.038 560.583 189.259 560.108 190.441L562.892 191.559C563.432 190.216 563.853 188.832 564.159 187.411L561.226 186.779ZM560.108 190.441C559.648 191.586 559.162 192.703 558.653 193.791L561.37 195.063C561.903 193.924 562.411 192.756 562.892 191.559L560.108 190.441ZM554.221 201.687C552.506 204.263 550.635 206.627 548.633 208.784L550.832 210.825C552.944 208.55 554.915 206.059 556.718 203.349L554.221 201.687ZM543.384 213.735C541.027 215.676 538.543 217.387 535.959 218.871L537.454 221.472C540.18 219.906 542.804 218.1 545.291 216.05L543.384 213.735ZM531.127 221.335C528.919 222.327 526.655 223.169 524.354 223.862L525.219 226.735C527.642 226.005 530.027 225.118 532.356 224.072L531.127 221.335ZM515.514 225.781C512.518 226.191 509.495 226.369 506.478 226.319L506.429 229.319C509.596 229.371 512.772 229.184 515.921 228.754L515.514 225.781ZM499.253 225.765C496.256 225.353 493.295 224.717 490.401 223.861L489.55 226.738C492.589 227.637 495.699 228.305 498.844 228.737L499.253 225.765ZM485.268 222.081C483.025 221.185 480.839 220.151 478.729 218.98L477.274 221.604C479.497 222.837 481.797 223.925 484.155 224.867L485.268 222.081ZM471.214 213.971C468.868 212.11 466.669 210.046 464.651 207.785L462.413 209.784C464.548 212.175 466.872 214.356 469.349 216.321L471.214 213.971ZM460.23 202.077C458.588 199.62 457.133 196.983 455.894 194.172L453.149 195.383C454.459 198.354 455.998 201.143 457.735 203.744L460.23 202.077ZM453.964 189.117C453.593 187.979 453.256 186.817 452.954 185.629L450.046 186.371C450.365 187.62 450.72 188.845 451.111 190.045L453.964 189.117ZM452.954 185.629C452.603 184.255 452.325 182.958 452.114 181.732L449.157 182.241C449.383 183.552 449.679 184.928 450.046 186.371L452.954 185.629ZM452.031 172.18C452.752 168.928 454.38 166.532 456.809 164.665L454.98 162.287C452.017 164.565 449.982 167.562 449.102 171.531L452.031 172.18ZM463.627 161.231C466.423 160.282 469.653 159.544 473.273 158.907L472.753 155.952C469.058 156.603 465.662 157.372 462.663 158.39L463.627 161.231ZM479.279 157.969C481.836 157.609 484.522 157.267 487.329 156.91L486.95 153.934C484.148 154.291 481.442 154.635 478.861 154.999L479.279 157.969ZM497.448 155.569C500.719 155.104 504.096 154.578 507.554 153.953L507.02 151C503.609 151.618 500.27 152.137 497.025 152.599L497.448 155.569ZM515.61 152.326C518.88 151.591 522.203 150.746 525.561 149.76L524.716 146.881C521.426 147.847 518.166 148.677 514.952 149.399L515.61 152.326ZM531.447 147.89C534.006 147.014 536.579 146.047 539.157 144.976L538.007 142.206C535.49 143.251 532.977 144.196 530.475 145.052L531.447 147.89ZM548.492 140.626C551.48 139.072 554.461 137.358 557.426 135.462L555.809 132.935C552.923 134.781 550.019 136.451 547.108 137.964L548.492 140.626ZM564.204 130.774C566.891 128.768 569.554 126.597 572.184 124.245L570.184 122.009C567.621 124.302 565.026 126.417 562.41 128.369L564.204 130.774ZM576.681 120.011C577.656 119.045 578.627 118.051 579.591 117.03L577.409 114.97C576.468 115.967 575.521 116.937 574.569 117.88L576.681 120.011Z",
+              fill: "black"
+            }
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c("g", { attrs: { mask: "url(#mask0)" } }, [
+        _c("path", {
+          attrs: {
+            d:
+              "M463 74C451.5 86 205.814 79 202.5 79C199.186 79 190.5 65.4183 190.5 61C190.5 56.5817 193.931 30.6063 202.5 13.5C241.098 -63.5509 469.299 -11.9476 463 74Z",
+            fill: "black"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M260.5 136.5C260.5 155.001 249.016 206.5 233 206.5C216.984 206.5 133 179.001 133 160.5C133 141.998 137.984 129.5 154 129.5C170.016 129.5 260.5 117.998 260.5 136.5Z",
+            fill: "black"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M79 95.5C79 114.002 45.1061 117 25.5 117C5.89389 117 -10 102.002 -10 83.5C-10 64.9985 5.89389 50 25.5 50C45.1061 50 79 76.9985 79 95.5Z",
+            fill: "black"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M582.5 115.5C590.33 134.448 575.71 213.075 559.5 226C529.987 249.532 436.5 232.501 436.5 214C426 169 493 91 493 91C493 91 567.124 78.2907 582.5 115.5Z",
+            fill: "black"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("defs", [
+        _c("clipPath", { attrs: { id: "clip0" } }, [
+          _c("rect", {
+            attrs: {
+              width: "60",
+              height: "60",
+              fill: "white",
+              transform: "translate(561 52)"
+            }
+          })
+        ])
+      ])
+    ]
   )
 }
 var staticRenderFns = []
